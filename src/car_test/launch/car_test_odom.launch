@@ -1,0 +1,20 @@
+<launch>
+    
+    <!-- 机器人模型加载文件 -->
+    <include file="$(find mycar_description)/launch/car.launch" />
+
+    <node name="fake_odom_publisher" pkg="car_test" type="fake_odometry_publisher.py" output="screen"/>
+    <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" launch-prefix="xterm -e"/>
+
+
+    <include file="$(find ros_arduino_python)/launch/arduino.launch"/>
+    <include file="$(find astra_camera)/launch/gemini.launch"/>
+    <include file="$(find lslidar_driver)/launch/lslidar_serial.launch"/>
+    
+    <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster"
+          args="0 0 0.1 0 0 0 base_footprint laser 100" />
+
+    <node pkg="tf" type="static_transform_publisher" name="base_to_camera_broadcaster"
+          args="0.2 0 0.15 0 0 0 base_footprint camera_link 100" />
+
+</launch>

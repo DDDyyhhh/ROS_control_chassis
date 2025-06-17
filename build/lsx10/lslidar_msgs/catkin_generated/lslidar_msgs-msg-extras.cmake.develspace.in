@@ -1,0 +1,2 @@
+set(lslidar_msgs_MESSAGE_FILES "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPacket.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarDifop.msg")
+set(lslidar_msgs_SERVICE_FILES "")

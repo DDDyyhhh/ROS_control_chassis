@@ -1,0 +1,10 @@
+<launch>
+    
+    <include file="$(find ros_arduino_python)/launch/arduino.launch"/>
+    <include file="$(find astra_camera)/launch/gemini.launch"/>
+    <include file="$(find lslidar_driver)/launch/lslidar_serial.launch"/>
+    <!-- 机器人模型加载文件 -->
+    <include file="$(find mycar_description)/launch/car.launch" />
+
+
+</launch>

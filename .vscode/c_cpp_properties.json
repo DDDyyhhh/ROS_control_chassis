@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/noetic/include/**",
+                "/home/orangepi/catkin_ws/src/unitree_lidar_ros/include/**",
+                "/home/orangepi/catkin_ws/src/wpr_simulation/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/src/lsx10/lslidar_driver/include",
+                "${workspaceFolder}/devel/include"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-arm64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

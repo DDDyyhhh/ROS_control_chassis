@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- 集成SLAM与move_base -->
+    <include file="$(find nav)/launch/gmapping.launch"/>
+    <include file="$(find nav)/launch/move_base.launch"/>
+    
+
+</launch>   

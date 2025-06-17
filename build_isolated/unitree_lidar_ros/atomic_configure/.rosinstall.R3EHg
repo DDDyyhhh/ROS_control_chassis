@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/orangepi/catkin_ws/devel_isolated/unitree_lidar_ros/setup.sh

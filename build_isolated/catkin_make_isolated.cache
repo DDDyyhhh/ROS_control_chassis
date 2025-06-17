@@ -1,0 +1,2 @@
+unitree_lidar_ros:wpr_simulation
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/orangepi/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/orangepi/catkin_ws/install_isolated

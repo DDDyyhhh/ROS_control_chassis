@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- 依赖于地图 -->
+    <include file="$(find nav)/launch/map_server.launch"/>
+    <!-- 包含定位节点 -->
+    <include file="$(find nav)/launch/amcl.launch"/>
+ 
+
+</launch>

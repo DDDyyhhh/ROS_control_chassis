@@ -1,0 +1,10 @@
+<launch>
+   <node name="arduino" pkg="ros_arduino_python" type="arduino_node.py" output="screen">
+      <rosparam file="$(find ros_arduino_python)/config/my_arduino_params.yaml" command="load" />
+   </node>
+
+   <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
+      <param name="speed" type="double" value="0.1" />
+      <param name="turn" type="double" value="0.3" />
+  </node>
+</launch>

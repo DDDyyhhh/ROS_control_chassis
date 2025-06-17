@@ -1,0 +1,16 @@
+<launch>
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    
+    <!-- *** 核心修改：切换回 TrajectoryPlannerROS *** -->
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+    
+    <!-- 加载所有参数文件 -->
+    <rosparam file="$(find nav)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find nav)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find nav)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find nav)/param/global_costmap_params.yaml" command="load" />
+    <!-- 注意：下面这个文件现在需要包含 TrajectoryPlannerROS 的参数 -->
+    <rosparam file="$(find nav)/param/base_local_planner_params.yaml" command="load" />
+
+    </node>
+</launch>

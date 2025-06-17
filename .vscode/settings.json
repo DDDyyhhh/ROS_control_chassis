@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "./src/ros_arduino_bridge/ros_arduino_python/src"
+    ],
+    "files.associations": {
+        "*.launch": "xml",
+        "condition_variable": "cpp"
+    }
+}

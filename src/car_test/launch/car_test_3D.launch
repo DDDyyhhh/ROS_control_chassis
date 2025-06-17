@@ -1,0 +1,11 @@
+<launch>
+    
+    <include file="$(find ros_arduino_python)/launch/arduino.launch"/>
+    <include file="$(find astra_camera)/launch/gemini.launch"/>
+    <include file="$(find unitree_lidar_ros)/launch/run_without_rviz.launch"/>
+    <!-- <include file="$(find point_lio_unilidar)/launch/mapping_unilidar_l2.launch"/> -->
+
+    <include file="$(find mycar_description)/launch/car.launch" />
+
+
+</launch>

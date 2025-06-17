@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+
+     <!-- ======================= 机器人驱动和传感器 ======================= -->
+    <include file="$(find car_test)/launch/car_test.launch" /> 
+    <!-- 假设这个文件启动了 arduino_node, lidar_node, robot_state_publisher 等 -->
+    
+    <!-- ======================= 地图服务与定位 ======================= -->
+    <!-- 加载你建好的地图 -->
+     <!-- 设置地图的配置文件 -->
+    <arg name="map" default="nav.yaml" />
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find nav)/map/$(arg map)"/>
+    <!-- <include file="$(find nav)/launch/map_server.launch"/> -->
+    
+    <!-- 集成定位实现 -->
+    <include file="$(find nav)/launch/amcl.launch"/>
+
+
+
+
+    <!-- 集成路径规划 -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    
+    <!-- *** 核心修改：切换回 TrajectoryPlannerROS *** -->
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+    
+    <!-- 加载所有参数文件 -->
+    <rosparam file="$(find nav)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find nav)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find nav)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find nav)/param/global_costmap_params.yaml" command="load" />
+    <!-- 注意：下面这个文件现在需要包含 TrajectoryPlannerROS 的参数 -->
+    <rosparam file="$(find nav)/param/base_local_planner_params.yaml" command="load" />
+
+    </node>
+    <!-- <include file="$(find nav)/launch/move_base.launch"/> -->
+
+</launch>

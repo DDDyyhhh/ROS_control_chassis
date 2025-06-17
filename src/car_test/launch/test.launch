@@ -1,0 +1,93 @@
+<launch>
+    <!-- ################# 参数定义 ################# -->
+
+    <!-- LiDAR相关参数 -->
+    <!-- 1. 定义LiDAR点云发布的话题名称 -->
+    <!-- TODO: 用户必须确认宇树L2雷达驱动实际发布的PointCloud2话题名称 -->
+    <arg name="lidar_topic_name" default="/unilidar/cloud" /> <!-- 示例值, 请修改为实际话题 -->
+
+    <!-- 2. 定义LiDAR传感器的frame_id (点云消息的header.frame_id) -->
+    <!-- TODO: 用户必须确认宇树L2雷达驱动发布的点云的frame_id -->
+    <arg name="lidar_sensor_frame_id" default="unilidar_lidar" /> <!-- 示例值, 请修改为实际frame_id -->
+
+    <!-- 3. 定义Point-LIO内部使用的机器人基座标系 (通常是'body'或'imu_link') -->
+    <arg name="lio_robot_base_frame" default="unilidar_imu" />
+
+    <!-- 相机相关参数 -->
+    <!-- 1. 定义相机驱动发布的相机基座标系 -->
+    <arg name="camera_base_frame" default="camera_link" /> <!-- 检查Gemini驱动是否使用这个frame_id -->
+    <!-- 你可能需要为相机驱动传递其他参数，例如序列号等 -->
+
+
+    <!-- ################# 静态TF发布 ################# -->
+    <!-- 这些TF描述了传感器相对于Point-LIO认为的机器人中心(lio_robot_base_frame)的安装位置 -->
+
+    <!-- TF: LIO机器人基座 (body) -> LiDAR传感器坐标系 (unitree_lidar_frame) -->
+    <!-- TODO: 用户必须根据实际安装位置精确测量并修改这里的 x y z YAW PITCH ROLL -->
+    <!-- 例如: LiDAR在body前方0.1m, 上方0.05m, 无旋转 -->
+    <node pkg="tf" type="static_transform_publisher" name="body_to_lidar_broadcaster"
+          args="0.1 0 0.05 0 0 0 $(arg lio_robot_base_frame) $(arg lidar_sensor_frame_id) 100" />
+          <!-- 注意：static_transform_publisher 的旋转参数是 YAW PITCH ROLL (弧度) -->
+
+    <!-- TF: LIO机器人基座 (body) -> 相机基座标系 (camera_link) -->
+    <!-- TODO: 用户必须根据实际安装位置精确测量并修改这里的 x y z YAW PITCH ROLL -->
+    <!-- 例如: 相机在body前方0.15m, 上方0.1m, 向下倾斜15度(绕Y轴负向旋转, 即PITCH为负) -->
+    <node pkg="tf" type="static_transform_publisher" name="body_to_camera_broadcaster"
+          args="0.15 0 0.1 0 -0.2618 0 $(arg lio_robot_base_frame) $(arg camera_base_frame) 100" /> <!-- -0.2618 rad approx -15 deg -->
+
+
+    <!-- ################# 传感器驱动 ################# -->
+
+    <!-- 1. 启动 Unitree L2 LiDAR 驱动 -->
+    <!-- 确保它发布的点云话题是 $(arg lidar_topic_name) -->
+    <!-- 确保它发布的点云的 header.frame_id 是 $(arg lidar_sensor_frame_id) -->
+    <include file="$(find unitree_lidar_ros)/launch/run_without_rviz.launch">
+        <!-- 如果run_without_rviz.launch允许参数化，可以在这里传递话题名和frame_id -->
+        <!-- 例如: <arg name="topic_name" value="$(arg lidar_topic_name)" /> -->
+        <!-- 例如: <arg name="frame_id" value="$(arg lidar_sensor_frame_id)" /> -->
+        <!-- 如果不能参数化，你需要确保驱动的默认设置与上面的arg一致，或者修改驱动的launch文件 -->
+    </include>
+
+
+    <!-- 2. 启动 Gemini Pro 深度相机驱动 -->
+    <!-- 确保它发布的相机基座标系是 $(arg camera_base_frame) -->
+    <include file="$(find astra_camera)/launch/gemini.launch">
+        <!-- 如果gemini.launch允许参数化，可以在这里传递frame_id -->
+        <!-- 例如: <arg name="camera_link_frame_id" value="$(arg camera_base_frame)" /> -->
+        <!-- 如果不能参数化，你需要确保驱动的默认设置与上面的arg一致，或者修改驱动的launch文件 -->
+    </include>
+
+
+    <!-- ################# SLAM系统 ################# -->
+
+    <!-- 3. 启动 point_lio_unilidar -->
+    <include file="$(find point_lio_unilidar)/launch/mapping_unilidar_l2.launch">
+        <!-- 将主launch文件中定义的LiDAR话题名称传递给point_lio_unilidar -->
+        <!-- mapping_unilidar_l2.launch内部需要有一个参数来接收这个值，例如也叫 lidar_topic -->
+        <!-- <arg name="lidar_topic" value="$(arg lidar_topic_name)" /> -->
+
+        <!-- Point-LIO也需要知道LiDAR传感器的frame_id，以便正确处理外参 -->
+        <!-- mapping_unilidar_l2.launch内部可能有一个参数叫 lidar_frame 或 lidar_link_frame -->
+        <!-- 如果point_lio_unilidar从点云消息的header.frame_id中读取，则此参数可能不需要显式传递 -->
+        <!-- 但为了清晰，如果可以，最好传递 -->
+        <!-- <arg name="lidar_frame" value="$(arg lidar_sensor_frame_id)" /> -->
+
+        <!-- Point-LIO可能也需要知道它应该使用的机器人基座标系名称 -->
+        <!-- <arg name="robot_base_frame" value="$(arg lio_robot_base_frame)" /> -->
+    </include>
+
+
+    <!-- ################# 可视化 ################# -->
+
+    <!-- 4. (可选但推荐) 启动 RViz -->
+    <!-- TODO: 将 your_package_name 替换为你的ROS包名 (例如 car_test) -->
+    <!-- <node type="rviz" name="rviz_lio_camera" pkg="rviz"
+          args="-d $(find your_package_name)/rviz_configs/lio_camera_view.rviz" /> -->
+    <!-- 在 lio_camera_view.rviz 配置文件中: -->
+    <!--   Global Options -> Fixed Frame: 设置为 "camera_init" (point_lio_unilidar发布的地图坐标系) -->
+    <!--   添加 TF Display -->
+    <!--   添加 PointCloud2 Display, Topic: $(arg lidar_topic_name) (原始LiDAR点云) -->
+    <!--   添加 PointCloud2 Display, Topic: /pointlio/cloud_registered (Point-LIO注册后的当前帧点云，在camera_init系) 或 /pointlio/laser_map (Point-LIO构建的地图点云) -->
+    <!--   添加 Image Displays for camera RGB and Depth -->
+
+</launch>
