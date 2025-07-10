@@ -1,0 +1,52 @@
+<launch>
+
+    
+    <!-- 
+      第一步: 启动与 STM32 的通信 
+      我们不再使用 ros_arduino_python，而是使用通用的 rosserial_python
+    -->
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
+        <param name="port" value="/dev/ttyUSB0"/>
+        <param name="baud" value="115200"/>
+        <param name="buffer_size" value="1024"/>
+    </node>
+
+    <!-- 第二步: 启动传感器 -->
+    <!-- Gemini Pro 深度相机 -->
+    <include file="$(find astra_camera)/launch/gemini.launch"/>
+    <include file="$(find lslidar_driver)/launch/lslidar_serial.launch"/>
+
+    <!-- 
+      第三步: 加载机器人模型并发布静态 TF 变换
+      你的 car.launch 文件很可能已经包含了 robot_state_publisher。
+      这个文件保持不变，直接使用。
+    -->
+    <include file="$(find mycar_description)/launch/car.launch" />
+
+    <!-- 
+        4. 【关键】使用 tf2_ros 来发布所有静态坐标系变换
+        这会连接好 TF 树的各个“孤岛”
+    -->
+    
+    <!-- 节点1: 发布从 base_link 到 laser_link 的静态变换 -->
+    <!-- 请确保 'laser_link' 与你的雷达驱动发布的 frame_id 一致 -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_laser_broadcaster" 
+          args="0 0 0.1 0 0 0 base_link laser" /> -->
+          <!-- args: x y z yaw pitch roll parent_frame child_frame -->
+          <!-- 示例值: 雷达在车体中心前方10cm，上方20cm -->
+
+    <!-- 节点2: 发布从 base_link 到 camera_link 的静态变换 -->
+    <!-- 请确保 'camera_link' 是你的相机驱动发布的根坐标系 -->
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_camera_broadcaster"
+          args="0.08 0.5 0.1 0 0 0 base_link camera_link" /> -->
+          <!-- 示例值: 相机在车体中心前方15cm，上方10cm -->
+  
+    <!-- 
+    【【【关键步骤 2】】】
+    启动一个节点来发布 /clock 话题。
+    我们可以用 rosbag play 的 clock 选项，即使我们不播放任何 bag 文件。
+    这是一个常用的技巧。
+  -->
+
+
+</launch>

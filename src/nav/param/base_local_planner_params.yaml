@@ -6,38 +6,51 @@ TrajectoryPlannerROS:
   holonomic_robot: false
 
   # Velocity limits
-  max_vel_x: 0.15         # 最大前进速度
-  min_vel_x: 0.05          # 最小前进速度。注意：这个规划器通常不允许min_vel_x为负，后退是作为恢复行为的一部分
+  max_vel_x: 0.18         # 最大前进速度
+  min_vel_x: 0.1          # 最小前进速度。注意：这个规划器通常不允许min_vel_x为负，后退是作为恢复行为的一部分
   
-  max_vel_theta: 0.8        # 最大旋转速度 (rad/s)
-  min_in_place_vel_theta: 0.4 # 最小原地旋转速度，确保能克服静摩擦力
+  max_vel_theta: 1.0        # 最大旋转速度 (rad/s)
+  min_in_place_vel_theta: 0.2 # 最小原地旋转速度，确保能克服静摩擦力
 
   # Acceleration limits
   acc_lim_x: 0.5          # X方向加速度
   acc_lim_theta: 1.0        # 角加速度
   
   # Goal Tolerance Parameters
-  xy_goal_tolerance: 0.15   # 位置容差 (m)
-  yaw_goal_tolerance: 0.15  # 姿态容差 (rad)
+  xy_goal_tolerance: 0.10   # 位置容差 (m)
+  yaw_goal_tolerance: 0.10  # 姿态容差 (rad)
   
+   # 【新增】锁存目标点。当到达 xy 容差范围后，机器人会原地旋转直到满足 yaw 容差。
+  # 这是实现精确姿态对齐的关键。
+  latch_xy_goal_tolerance: true
+
   # Forward Simulation Parameters
   sim_time: 1.5           # 向前仿真时间
-  sim_granularity: 0.025  # 仿真步长
-  angular_sim_granularity: 0.025 # 角度仿真步长
+  sim_granularity: 0.05  # 仿真步长
+  angular_sim_granularity: 0.05 # 角度仿真步长
   
   # Trajectory Scoring Parameters
   # 这些是这个规划器的核心，与DWA不同
   # 鼓励机器人沿着全局路径走
-  path_distance_bias: 0.6   # 权重较高，让它尽量贴近绿线
+  path_distance_bias: 32.0   # 权重较高，让它尽量贴近绿线
   # 鼓励机器人朝向目标
-  goal_distance_bias: 0.8   # 权重也较高，让它有前进的动力
+  goal_distance_bias: 24.0   # 权重也较高，让它有前进的动力
   # 鼓励机器人远离障碍物
-  occdist_scale: 2       # 设为一个较小的值，让它不那么害怕障碍物
+  occdist_scale: 1       # 设为一个较小的值，让它不那么害怕障碍物
+
+# 【新增】鼓励机器人朝向全局路径的方向
+  heading_lookahead: 0.325
+  heading_scoring: true
+  heading_scoring_timestep: 0.8
+
+
+ # 【新增】允许机器人后退来调整姿态（如果需要的话）
+  escape_vel: -0.1
   
   # 其他参数
   # 采样数，决定了计算量和路径质量
-  vx_samples: 8
-  vtheta_samples: 20
+  vx_samples: 4
+  vtheta_samples: 10
   
   # 告诉规划器，如果速度指令是(0,0,0)就认为到达目标了
   # 这可以防止在终点附近微小抖动

@@ -82,8 +82,8 @@ lsx10/lslidar_msgs/CMakeFiles/lslidar_msgs_generate_messages_cpp: /home/orangepi
 /home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg
 /home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg
-/home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg
 /home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg
 /home/orangepi/catkin_ws/devel/include/lslidar_msgs/LslidarSweep.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/orangepi/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from lslidar_msgs/LslidarSweep.msg"
 	cd /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs && /home/orangepi/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg -Ilslidar_msgs:/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lslidar_msgs -o /home/orangepi/catkin_ws/devel/include/lslidar_msgs -e /opt/ros/noetic/share/gencpp/cmake/..

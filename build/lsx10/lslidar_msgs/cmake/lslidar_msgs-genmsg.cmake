@@ -34,7 +34,7 @@ add_custom_target(_lslidar_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg" NAME_WE)
 add_custom_target(_lslidar_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lslidar_msgs" "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg" "lslidar_msgs/LslidarPoint:lslidar_msgs/LslidarScan:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lslidar_msgs" "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg" "lslidar_msgs/LslidarPoint:std_msgs/Header:lslidar_msgs/LslidarScan"
 )
 
 get_filename_component(_filename "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarDifop.msg" NAME_WE)
@@ -69,7 +69,7 @@ _generate_msg_cpp(lslidar_msgs
 _generate_msg_cpp(lslidar_msgs
   "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg"
   "${MSG_I_FLAGS}"
-  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lslidar_msgs
 )
 _generate_msg_cpp(lslidar_msgs
@@ -134,7 +134,7 @@ _generate_msg_eus(lslidar_msgs
 _generate_msg_eus(lslidar_msgs
   "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg"
   "${MSG_I_FLAGS}"
-  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lslidar_msgs
 )
 _generate_msg_eus(lslidar_msgs
@@ -199,7 +199,7 @@ _generate_msg_lisp(lslidar_msgs
 _generate_msg_lisp(lslidar_msgs
   "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg"
   "${MSG_I_FLAGS}"
-  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lslidar_msgs
 )
 _generate_msg_lisp(lslidar_msgs
@@ -264,7 +264,7 @@ _generate_msg_nodejs(lslidar_msgs
 _generate_msg_nodejs(lslidar_msgs
   "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg"
   "${MSG_I_FLAGS}"
-  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/lslidar_msgs
 )
 _generate_msg_nodejs(lslidar_msgs
@@ -329,7 +329,7 @@ _generate_msg_py(lslidar_msgs
 _generate_msg_py(lslidar_msgs
   "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg"
   "${MSG_I_FLAGS}"
-  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lslidar_msgs
 )
 _generate_msg_py(lslidar_msgs
