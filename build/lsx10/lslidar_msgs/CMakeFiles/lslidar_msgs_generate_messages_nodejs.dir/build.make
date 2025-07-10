@@ -79,8 +79,8 @@ lsx10/lslidar_msgs/CMakeFiles/lslidar_msgs_generate_messages_nodejs: /home/orang
 /home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg/LslidarSweep.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg/LslidarSweep.js: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg
 /home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg/LslidarSweep.js: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarPoint.msg
-/home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg/LslidarSweep.js: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg
 /home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg/LslidarSweep.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg/LslidarSweep.js: /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarScan.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/orangepi/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from lslidar_msgs/LslidarSweep.msg"
 	cd /home/orangepi/catkin_ws/build/lsx10/lslidar_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg -Ilslidar_msgs:/home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p lslidar_msgs -o /home/orangepi/catkin_ws/devel/share/gennodejs/ros/lslidar_msgs/msg
 

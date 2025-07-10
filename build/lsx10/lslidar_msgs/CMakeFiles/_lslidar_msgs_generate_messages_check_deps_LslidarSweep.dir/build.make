@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/orangepi/catkin_ws/build
 include lsx10/lslidar_msgs/CMakeFiles/_lslidar_msgs_generate_messages_check_deps_LslidarSweep.dir/progress.make
 
 lsx10/lslidar_msgs/CMakeFiles/_lslidar_msgs_generate_messages_check_deps_LslidarSweep:
-	cd /home/orangepi/catkin_ws/build/lsx10/lslidar_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py lslidar_msgs /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg lslidar_msgs/LslidarPoint:lslidar_msgs/LslidarScan:std_msgs/Header
+	cd /home/orangepi/catkin_ws/build/lsx10/lslidar_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py lslidar_msgs /home/orangepi/catkin_ws/src/lsx10/lslidar_msgs/msg/LslidarSweep.msg lslidar_msgs/LslidarPoint:std_msgs/Header:lslidar_msgs/LslidarScan
 
 _lslidar_msgs_generate_messages_check_deps_LslidarSweep: lsx10/lslidar_msgs/CMakeFiles/_lslidar_msgs_generate_messages_check_deps_LslidarSweep
 _lslidar_msgs_generate_messages_check_deps_LslidarSweep: lsx10/lslidar_msgs/CMakeFiles/_lslidar_msgs_generate_messages_check_deps_LslidarSweep.dir/build.make

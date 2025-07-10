@@ -182,81 +182,6 @@ pointlio_mapping/fast:
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build
 .PHONY : pointlio_mapping/fast
 
-# Convenience name for target.
-point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_py: point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-.PHONY : point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_nodejs: point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : nav_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-.PHONY : point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_eus: point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make point_lio_unilidar/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
 include/ikd-Tree/ikd_Tree.o: include/ikd-Tree/ikd_Tree.cpp.o
 
 .PHONY : include/ikd-Tree/ikd_Tree.o
@@ -406,11 +331,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... pointlio_mapping"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... include/ikd-Tree/ikd_Tree.o"
 	@echo "... include/ikd-Tree/ikd_Tree.i"
 	@echo "... include/ikd-Tree/ikd_Tree.s"

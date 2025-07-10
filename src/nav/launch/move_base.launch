@@ -1,6 +1,7 @@
 <launch>
     <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     
+
     <!-- *** 核心修改：切换回 TrajectoryPlannerROS *** -->
     <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
     
