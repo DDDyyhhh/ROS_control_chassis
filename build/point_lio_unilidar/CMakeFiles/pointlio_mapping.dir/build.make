@@ -233,6 +233,8 @@ pointlio_mapping_EXTERNAL_OBJECTS =
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libroslz4.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /usr/lib/aarch64-linux-gnu/liblz4.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtopic_tools.so
+/home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtf_conversions.so
+/home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libkdl_conversions.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtf.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtf2_ros.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libactionlib.so
@@ -365,6 +367,8 @@ pointlio_mapping_EXTERNAL_OBJECTS =
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libroslz4.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /usr/lib/aarch64-linux-gnu/liblz4.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtopic_tools.so
+/home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtf_conversions.so
+/home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libkdl_conversions.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtf.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libtf2_ros.so
 /home/orangepi/catkin_ws/devel/lib/point_lio_unilidar/pointlio_mapping: /opt/ros/noetic/lib/libactionlib.so

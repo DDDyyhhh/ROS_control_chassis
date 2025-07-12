@@ -1,0 +1,43 @@
+<!-- octomap_server.launch -->
+<launch>
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+    <!-- 分辨率 (米)，即每个栅格的大小。应与你的 SLAM 算法匹配 -->
+    <param name="resolution" value="0.05" />
+
+    <!-- 坐标系名称 -->
+    <param name="frame_id" type="string" value="map" />
+
+    <!-- 传感器最大探测距离 -->
+    <param name="sensor_model/max_range" value="10.0" />
+
+    <!-- 订阅的 3D 点云话题 -->
+    <!-- 我们让它订阅 Point-LIO 实时配准后的点云 -->
+    <remap from="cloud_in" to="/pointlio/cloud_registered_body" />
+
+    <param name="pointcloud_min_z" value="-2.0" /> <!-- 切割平面的最低高度 (米) -->
+    <param name="pointcloud_max_z" value="2.0" /> <!-- 切割平面的最高高度 (米) -->
+
+    <!-- <param name="tf_tolerance" value="0.5" /> -->
+     <remap from="projected_map" to="/map" />
+
+     <!-- 【【【关键参数】】】 -->
+    <!-- 这个参数告诉Octomap，对于没有击中任何物体的最远端光束，也应该被用来清除自由空间 -->
+    <!-- 它的值应该略小于或等于你的雷达最大有效距离 -->
+    <param name="sensor_model/miss" value="0.0" /> <!-- miss的概率，通常设为较低值 -->
+    <param name="sensor_model/hit" value="0.7" />   <!-- hit的概率，通常设为较高值 -->
+
+    <!-- 【重要】这两个参数控制置信度的上下限和阈值 -->
+    <!-- 降低阈值可以让障碍物更快地被清除 -->
+    <param name="occupancy_min_z" value="-2.0" /> <!-- 确保和点云过滤范围一致 -->
+    <param name="occupancy_max_z" value="2.0" />
+    <param name="clamping_thres_min" value="0.12" /> <!-- 置信度下限 -->
+    <param name="clamping_thres_max" value="0.97" /> <!-- 置信度上限 -->
+    <param name="occupancy_thres" value="0.7" /> <!-- 【可调】高于此值为障碍物。可以适当降低一点点，比如0.65 -->
+
+
+  </node>
+</launch>
+
+
+
+

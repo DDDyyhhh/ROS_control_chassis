@@ -1,20 +1,68 @@
+
+# -------------------------N10激光雷达配置---------------------------------
 #机器人几何参，如果机器人是圆形，设置 robot_radius,如果是其他形状设置 footprint
 # robot_radius: 0.12 #圆形
+# footprint: [[0.134, 0.134], [0.134, -0.134], [-0.134, -0.134], [-0.134, 0.134]]
+# # footprint: [[0.05, 0.05], [0.05, -0.05], [-0.05, -0.05], [-0.05, 0.05]]
+
+# obstacle_range: 3.0 # 用于障碍物探测，比如: 值为 3.0，意味着检测到距离小于 3 米的障碍物时，就会引入代价地图
+# raytrace_range: 3.5 # 用于清除障碍物，比如：值为 3.5，意味着清除代价地图中 3.5 米以外的障碍物
+
+
+# #膨胀半径，扩展在碰撞区域以外的代价区域，使得机器人规划路径避开障碍物
+# inflation_radius: 0.2
+# #代价比例系数，越大则代价值越小
+# cost_scaling_factor: 5.0
+
+# #地图类型
+# map_type: costmap
+# #导航包所需要的传感器
+# observation_sources: scan
+# #对传感器的坐标系和数据进行配置。这个也会用于代价地图添加和清除障碍物。例如，你可以用激光雷达传感器用于在代价地图添加障碍物，再添加kinect用于导航和清除障碍物。
+# scan: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+# -------------------------N10激光雷达配置---------------------------------
+
+
+
+# -------------------------宇树3d雷达设置------------------
+# costmap_common_params.yaml (最终修正版)
+
+# 机器人尺寸
 footprint: [[0.134, 0.134], [0.134, -0.134], [-0.134, -0.134], [-0.134, 0.134]]
-# footprint: [[0.05, 0.05], [0.05, -0.05], [-0.05, -0.05], [-0.05, 0.05]]
 
-obstacle_range: 3.0 # 用于障碍物探测，比如: 值为 3.0，意味着检测到距离小于 3 米的障碍物时，就会引入代价地图
-raytrace_range: 3.5 # 用于清除障碍物，比如：值为 3.5，意味着清除代价地图中 3.5 米以外的障碍物
+# 障碍物层配置
+obstacle_layer:
+  enabled: true
+  obstacle_range: 5.0
+  raytrace_range: 6.0
+  observation_sources: point_cloud_sensor # 可以有多个来源，用空格隔开
+
+   # 定义点云传感器的来源
+  point_cloud_sensor: {
+    sensor_frame: map,       # 点云在其自身的坐标系unilidar_lidar
+    data_type: PointCloud2,             # 【重要】数据类型是 PointCloud2
+    topic: /pointlio/cloud_registered_body,  # /pointlio/cloud_registered,  #/unilidar/cloud,             # 【重要】直接订阅原始的 3D 点云话题
+    marking: true,                      # 用它来标记障碍物
+    clearing: true,                     # 也用它来清除障碍物（通过 raytracing）
+    # 【新增】告诉代价地图，这是一个 3D 传感器，需要处理 Z 轴
+    # min_obstacle_height: 0.05,          # 忽略低于 5cm 的障碍物 (如地面上的小石子)
+    # max_obstacle_height: 1.0,            # 忽略高于 1m 的障碍物 (如天花板、门框)
+    
+    observation_persistence: 1.0, 
+    # Voxel-specific parameters
+    origin_z: 0.0,
+    z_resolution: 0.05,
+    z_voxels: 20, # = (1.0 - 0.0) / 0.05, 覆盖从 0 到 1 米的高度
+    publish_voxel_map: true # 可以在 Rviz 中可视化体素地图，方便调试
+    
+  }
+
+# 膨胀层配置 (在障碍物周围创建缓冲区域)
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 10.0
+  inflation_radius: 0.2
 
 
-#膨胀半径，扩展在碰撞区域以外的代价区域，使得机器人规划路径避开障碍物
-inflation_radius: 0.2
-#代价比例系数，越大则代价值越小
-cost_scaling_factor: 5.0
 
-#地图类型
-map_type: costmap
-#导航包所需要的传感器
-observation_sources: scan
-#对传感器的坐标系和数据进行配置。这个也会用于代价地图添加和清除障碍物。例如，你可以用激光雷达传感器用于在代价地图添加障碍物，再添加kinect用于导航和清除障碍物。
-scan: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+# ------------------------------------------------------------------

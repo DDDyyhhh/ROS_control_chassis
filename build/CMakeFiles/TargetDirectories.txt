@@ -540,6 +540,7 @@
 /home/orangepi/catkin_ws/build/point_lio_unilidar/CMakeFiles/rebuild_cache.dir
 /home/orangepi/catkin_ws/build/point_lio_unilidar/CMakeFiles/edit_cache.dir
 /home/orangepi/catkin_ws/build/point_lio_unilidar/CMakeFiles/test.dir
+/home/orangepi/catkin_ws/build/point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir
 /home/orangepi/catkin_ws/build/point_lio_unilidar/CMakeFiles/pointlio_mapping.dir
 /home/orangepi/catkin_ws/build/rosserial/rosserial_embeddedlinux/CMakeFiles/install/strip.dir
 /home/orangepi/catkin_ws/build/rosserial/rosserial_embeddedlinux/CMakeFiles/install/local.dir

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/orangepi/catkin_ws/build
 include astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetCameraInfo.dir/progress.make
 
 astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetCameraInfo:
-	cd /home/orangepi/catkin_ws/build/astra_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py astra_camera /home/orangepi/catkin_ws/src/astra_camera/srv/GetCameraInfo.srv sensor_msgs/RegionOfInterest:std_msgs/Header:sensor_msgs/CameraInfo
+	cd /home/orangepi/catkin_ws/build/astra_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py astra_camera /home/orangepi/catkin_ws/src/astra_camera/srv/GetCameraInfo.srv std_msgs/Header:sensor_msgs/RegionOfInterest:sensor_msgs/CameraInfo
 
 _astra_camera_generate_messages_check_deps_GetCameraInfo: astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetCameraInfo
 _astra_camera_generate_messages_check_deps_GetCameraInfo: astra_camera/CMakeFiles/_astra_camera_generate_messages_check_deps_GetCameraInfo.dir/build.make

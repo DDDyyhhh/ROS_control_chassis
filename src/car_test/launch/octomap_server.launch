@@ -1,0 +1,43 @@
+<!-- octomap_server.launch (最终3D强化版) -->
+<launch>
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server" output="screen">
+    
+    <!-- 1. 基本配置 -->
+    <param name="resolution" value="0.05" />
+    <param name="frame_id" type="string" value="map" />
+    <remap from="projected_map" to="/map" />
+    
+    <!-- 2. 数据源配置 -->
+    <remap from="cloud_in" to="/pointlio/cloud_registered_body" />
+    <param name="tf_tolerance" value="1.0" />
+    
+    <!-- 3. 高度过滤 (之前已配置) -->
+    <param name="pointcloud_min_z" value="-2.0" />
+    <param name="pointcloud_max_z" value="2.0" />
+
+    <!-- 4. 【【【核心：概率更新模型参数】】】 -->
+    <!-- 传感器模型参数，定义了如何根据观测更新地图 -->
+    <param name="sensor_model/max_range" value="10.0" /> <!-- 【重要】光线追踪的最大距离 -->
+    <param name="sensor_model/hit" value="0.7" />      <!-- 击中点增加的置信度，值越高，障碍物越“实” -->
+    <param name="sensor_model/miss" value="0.49" />     <!-- 未击中点(自由空间)降低的置信度，值越高，清除越快 -->
+    
+    <!-- 5. 【【【核心：置信度阈值参数】】】 -->
+    <!-- 置信度被限制在这个区间内 -->
+    <param name="clamping_thres_min" value="0.12" />
+    <param name="clamping_thres_max" value="0.85" />
+    <!-- 【重要】高于此置信度的Voxel被认为是障碍物 -->
+    <!-- 默认是0.5，我们可以稍微提高一点，让它更不容易将噪声判断为障碍物 -->
+    <param name="occupancy_thres" value="0.6" /> 
+
+    <!-- 6. 【【【新增的秘密武器：Filter-chain】】】 -->
+    <!-- 这是一个更高级的特性，它允许在点云被处理前对其进行过滤 -->
+    <!-- 我们用它来明确地告诉octomap，哪些点是地面，不应该被当做障碍物 -->
+    <param name="filter_ground" type="bool" value="false" />
+    <param name="base_frame_id" type="string" value="base_link" /> <!-- 新增：指定基准坐标系 -->
+    <param name="ground_filter/plane_distance" type="double" value="0.07" />
+    <param name="ground_filter/angle" type="double" value="15" />
+    <param name="ground_filter/iterations" type="int" value="100" />
+    <param name="ground_filter/max_distance" type="double" value="5.0" />
+
+  </node>
+</launch>

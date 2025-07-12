@@ -55,3 +55,5 @@ TrajectoryPlannerROS:
   # 告诉规划器，如果速度指令是(0,0,0)就认为到达目标了
   # 这可以防止在终点附近微小抖动
   meter_scoring: true
+
+  transform_tolerance: 1.0

@@ -9,3 +9,4 @@
 # modified environment variables
 export LD_LIBRARY_PATH='/home/orangepi/catkin_ws/devel/lib:/opt/ros/noetic/lib:/usr/local/lib'
 export PWD='/home/orangepi/catkin_ws/build'
+export PYTHONPATH='/home/orangepi/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages:/home/orangepi/.local/lib/python3.8/site-packages'
