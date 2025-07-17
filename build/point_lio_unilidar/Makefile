@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/rule:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/rule
+.PHONY : point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/rule
+
+# Convenience name for target.
+pointlio_mapping_STM32: point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/rule
+
+.PHONY : pointlio_mapping_STM32
+
+# fast build rule for target.
+pointlio_mapping_STM32/fast:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build
+.PHONY : pointlio_mapping_STM32/fast
+
+# Convenience name for target.
 point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/rule:
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/rule
 .PHONY : point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/rule
@@ -188,6 +203,7 @@ include/ikd-Tree/ikd_Tree.o: include/ikd-Tree/ikd_Tree.cpp.o
 
 # target to build an object file
 include/ikd-Tree/ikd_Tree.cpp.o:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/include/ikd-Tree/ikd_Tree.cpp.o
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o
 .PHONY : include/ikd-Tree/ikd_Tree.cpp.o
 
@@ -197,6 +213,7 @@ include/ikd-Tree/ikd_Tree.i: include/ikd-Tree/ikd_Tree.cpp.i
 
 # target to preprocess a source file
 include/ikd-Tree/ikd_Tree.cpp.i:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/include/ikd-Tree/ikd_Tree.cpp.i
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.i
 .PHONY : include/ikd-Tree/ikd_Tree.cpp.i
 
@@ -206,6 +223,7 @@ include/ikd-Tree/ikd_Tree.s: include/ikd-Tree/ikd_Tree.cpp.s
 
 # target to generate assembly for a file
 include/ikd-Tree/ikd_Tree.cpp.s:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/include/ikd-Tree/ikd_Tree.cpp.s
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.s
 .PHONY : include/ikd-Tree/ikd_Tree.cpp.s
 
@@ -215,6 +233,7 @@ src/Estimator.o: src/Estimator.cpp.o
 
 # target to build an object file
 src/Estimator.cpp.o:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/Estimator.cpp.o
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o
 .PHONY : src/Estimator.cpp.o
 
@@ -224,6 +243,7 @@ src/Estimator.i: src/Estimator.cpp.i
 
 # target to preprocess a source file
 src/Estimator.cpp.i:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/Estimator.cpp.i
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.i
 .PHONY : src/Estimator.cpp.i
 
@@ -233,6 +253,7 @@ src/Estimator.s: src/Estimator.cpp.s
 
 # target to generate assembly for a file
 src/Estimator.cpp.s:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/Estimator.cpp.s
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.s
 .PHONY : src/Estimator.cpp.s
 
@@ -263,12 +284,40 @@ src/laserMapping.cpp.s:
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.s
 .PHONY : src/laserMapping.cpp.s
 
+src/laserMapping_STM32.o: src/laserMapping_STM32.cpp.o
+
+.PHONY : src/laserMapping_STM32.o
+
+# target to build an object file
+src/laserMapping_STM32.cpp.o:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/laserMapping_STM32.cpp.o
+.PHONY : src/laserMapping_STM32.cpp.o
+
+src/laserMapping_STM32.i: src/laserMapping_STM32.cpp.i
+
+.PHONY : src/laserMapping_STM32.i
+
+# target to preprocess a source file
+src/laserMapping_STM32.cpp.i:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/laserMapping_STM32.cpp.i
+.PHONY : src/laserMapping_STM32.cpp.i
+
+src/laserMapping_STM32.s: src/laserMapping_STM32.cpp.s
+
+.PHONY : src/laserMapping_STM32.s
+
+# target to generate assembly for a file
+src/laserMapping_STM32.cpp.s:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/laserMapping_STM32.cpp.s
+.PHONY : src/laserMapping_STM32.cpp.s
+
 src/parameters.o: src/parameters.cpp.o
 
 .PHONY : src/parameters.o
 
 # target to build an object file
 src/parameters.cpp.o:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/parameters.cpp.o
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o
 .PHONY : src/parameters.cpp.o
 
@@ -278,6 +327,7 @@ src/parameters.i: src/parameters.cpp.i
 
 # target to preprocess a source file
 src/parameters.cpp.i:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/parameters.cpp.i
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.i
 .PHONY : src/parameters.cpp.i
 
@@ -287,6 +337,7 @@ src/parameters.s: src/parameters.cpp.s
 
 # target to generate assembly for a file
 src/parameters.cpp.s:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/parameters.cpp.s
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.s
 .PHONY : src/parameters.cpp.s
 
@@ -296,6 +347,7 @@ src/preprocess.o: src/preprocess.cpp.o
 
 # target to build an object file
 src/preprocess.cpp.o:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/preprocess.cpp.o
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o
 .PHONY : src/preprocess.cpp.o
 
@@ -305,6 +357,7 @@ src/preprocess.i: src/preprocess.cpp.i
 
 # target to preprocess a source file
 src/preprocess.cpp.i:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/preprocess.cpp.i
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.i
 .PHONY : src/preprocess.cpp.i
 
@@ -314,6 +367,7 @@ src/preprocess.s: src/preprocess.cpp.s
 
 # target to generate assembly for a file
 src/preprocess.cpp.s:
+	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/src/preprocess.cpp.s
 	cd /home/orangepi/catkin_ws/build && $(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.s
 .PHONY : src/preprocess.cpp.s
 
@@ -330,6 +384,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... pointlio_mapping_STM32"
 	@echo "... pointlio_mapping"
 	@echo "... include/ikd-Tree/ikd_Tree.o"
 	@echo "... include/ikd-Tree/ikd_Tree.i"
@@ -340,6 +395,9 @@ help:
 	@echo "... src/laserMapping.o"
 	@echo "... src/laserMapping.i"
 	@echo "... src/laserMapping.s"
+	@echo "... src/laserMapping_STM32.o"
+	@echo "... src/laserMapping_STM32.i"
+	@echo "... src/laserMapping_STM32.s"
 	@echo "... src/parameters.o"
 	@echo "... src/parameters.i"
 	@echo "... src/parameters.s"

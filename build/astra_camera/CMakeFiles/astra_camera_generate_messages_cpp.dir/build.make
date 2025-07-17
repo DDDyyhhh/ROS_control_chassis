@@ -97,8 +97,8 @@ astra_camera/CMakeFiles/astra_camera_generate_messages_cpp: /home/orangepi/catki
 
 /home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /home/orangepi/catkin_ws/src/astra_camera/srv/GetCameraInfo.srv
-/home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/share/sensor_msgs/msg/RegionOfInterest.msg
 /home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/share/sensor_msgs/msg/RegionOfInterest.msg
 /home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/share/sensor_msgs/msg/CameraInfo.msg
 /home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/orangepi/catkin_ws/devel/include/astra_camera/GetCameraInfo.h: /opt/ros/noetic/share/gencpp/srv.h.template

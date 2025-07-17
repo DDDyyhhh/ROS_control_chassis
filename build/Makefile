@@ -3847,6 +3847,19 @@ octomap_server_multilayer/fast:
 .PHONY : octomap_server_multilayer/fast
 
 #=============================================================================
+# Target rules for targets named pointlio_mapping_STM32
+
+# Build rule for target.
+pointlio_mapping_STM32: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pointlio_mapping_STM32
+.PHONY : pointlio_mapping_STM32
+
+# fast build rule for target.
+pointlio_mapping_STM32/fast:
+	$(MAKE) -f point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build.make point_lio_unilidar/CMakeFiles/pointlio_mapping_STM32.dir/build
+.PHONY : pointlio_mapping_STM32/fast
+
+#=============================================================================
 # Target rules for targets named pointlio_mapping
 
 # Build rule for target.
@@ -5117,6 +5130,7 @@ help:
 	@echo "... octomap_tracking_server_node"
 	@echo "... octomap_server_nodelet"
 	@echo "... octomap_server_multilayer"
+	@echo "... pointlio_mapping_STM32"
 	@echo "... pointlio_mapping"
 	@echo "... rosserial_test_rosserial_lib"
 	@echo "... run_tests_rosserial_test_rostest_test_rosserial_python_socket.test"

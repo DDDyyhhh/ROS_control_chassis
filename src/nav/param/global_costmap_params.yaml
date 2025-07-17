@@ -1,10 +1,88 @@
+# N10激光雷达
+# global_costmap:
+#   global_frame: map #地图坐标系
+#   robot_base_frame: base_link #机器人坐标系
+#   # 以此实现坐标变换
+
+#   update_frequency: 1.0 #代价地图更新频率
+#   publish_frequency: 1.0 #代价地图的发布频率
+#   transform_tolerance: 0.5 #等待坐标变换发布信息的超时时间
+
+#   static_map: true # 是否使用一个地图或者地图服务器来初始化全局代价地图，如果不使用静态地图，这个参数为false.
+
+# 宇树L2激光雷达
+# global_costmap_params.yaml
+# global_costmap:
+#   global_frame: map
+#   robot_base_frame: base_link 
+#   update_frequency: 1.0
+#   publish_frequency: 0.5
+
+#   # 【【【关键修正】】】
+#   # 使用一个静态地图层，它的数据来源是 /map 话题
+#   static_map: true
+#   transform_tolerance: 1.0
+#   rolling_window: false          # 全局地图也应该是滚动的 
+#   # 全局代价地图也包含我们定义的障碍物层和膨胀层
+#   plugins:
+#     - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+#     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+
+ 
+# global_costmap_params.yaml (最终修正版 V2)
 global_costmap:
-  global_frame: map #地图坐标系
-  robot_base_frame: base_link #机器人坐标系
-  # 以此实现坐标变换
+  global_frame: map
+  robot_base_frame: base_link
+  
+  update_frequency: 2.0  # 可以适当提高更新频率，让清除更及时
+  publish_frequency: 1.0
+  
+  static_map: true
+  transform_tolerance: 1.0
 
-  update_frequency: 1.0 #代价地图更新频率
-  publish_frequency: 1.0 #代价地图的发布频率
-  transform_tolerance: 0.5 #等待坐标变换发布信息的超时时间
+   # 【【【最终的关键修改！！！】】】
+  # 我们需要手动指定全局代价地图的尺寸
+  # 确保这个尺寸远大于你的机器人可能活动的工作区域
+  # 这样机器人的传感器原点就永远不会 "out of map bounds"
+  # 单位是米。我们先设置一个 50米 x 50米 的大地图。
+  width: 50.0
+  height: 50.0
+  # 地图的原点，可以设置为让机器人启动时位于地图中心
+  origin_x: -25.0
+  origin_y: -25.0
 
-  static_map: true # 是否使用一个地图或者地图服务器来初始化全局代价地图，如果不使用静态地图，这个参数为false.
+
+  plugins:
+    # 插件的顺序很重要！
+    # 1. 静态层，作为底图
+    - {name: static_layer,    type: "costmap_2d::StaticLayer"}
+    
+    # 2. 障碍物层，用于添加和清除实时障碍物
+    #    这个层必须在 static_layer 之后
+    - {name: obstacle_layer,  type: "costmap_2d::VoxelLayer"}
+    
+    # 3. 膨胀层，必须在最后，用于膨胀所有障碍物
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+  # 【【【关键修改】】】
+  # 为 static_layer 和 obstacle_layer 分别提供参数
+  static_layer:
+    enabled: true
+    map_topic: /map
+    # 这个参数很重要，它允许 obstacle_layer 覆盖 static_layer 的信息
+    track_unknown_space: true 
+
+  obstacle_layer:
+    enabled: true
+    # observation_sources, point_cloud_sensor 等参数
+    # 已经在 costmap_common_params.yaml 中定义了，这里会自动继承
+    # 我们需要确保 ray-tracing (清除) 功能被充分利用
+    obstacle_range: 5.0  # 物体被认为是障碍物的最大距离
+    raytrace_range: 6.0  # 光线追踪的最大距离，应略大于 obstacle_range
+                        # 确保能清除掉范围内的障碍物
+  
+  inflation_layer:
+    enabled: true
+    inflation_radius: 0.2
+    # cost_scaling_factor: 10.0

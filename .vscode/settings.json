@@ -8,6 +8,7 @@
     ],
     "files.associations": {
         "*.launch": "xml",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "ostream": "cpp"
     }
 }

@@ -94,8 +94,8 @@ astra_camera/CMakeFiles/astra_camera_generate_messages_py: /home/orangepi/catkin
 
 /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv/_GetCameraInfo.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv/_GetCameraInfo.py: /home/orangepi/catkin_ws/src/astra_camera/srv/GetCameraInfo.srv
-/home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv/_GetCameraInfo.py: /opt/ros/noetic/share/sensor_msgs/msg/RegionOfInterest.msg
 /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv/_GetCameraInfo.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv/_GetCameraInfo.py: /opt/ros/noetic/share/sensor_msgs/msg/RegionOfInterest.msg
 /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv/_GetCameraInfo.py: /opt/ros/noetic/share/sensor_msgs/msg/CameraInfo.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/orangepi/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV astra_camera/GetCameraInfo"
 	cd /home/orangepi/catkin_ws/build/astra_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/orangepi/catkin_ws/src/astra_camera/srv/GetCameraInfo.srv -Iastra_camera:/home/orangepi/catkin_ws/src/astra_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p astra_camera -o /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/astra_camera/srv

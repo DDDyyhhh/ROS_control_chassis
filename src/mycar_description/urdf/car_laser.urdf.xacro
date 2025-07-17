@@ -31,7 +31,7 @@
         <child link="support"/>
         <origin xyz="${joint_support_x} ${joint_support_y} ${joint_support_z}" rpy="0 0 0" />
     </joint>
-    <link name="laser">
+    <link name="unilidar_imu_initial">
         <visual>
             <geometry>
                 <cylinder radius="${laser_radius}" length="${laser_length}" />
@@ -43,9 +43,9 @@
 
     </link>
 
-    <joint name="laser2support" type="fixed">
+    <joint name="unilidar_imu_initial2support" type="fixed">
         <parent link="support" />
-        <child link="laser"/>
-        <origin xyz="${joint_laser_x} ${joint_laser_y} ${joint_laser_z}" rpy="0 0 3.1415926" />
+        <child link="unilidar_imu_initial"/>
+        <origin xyz="${joint_laser_x} ${joint_laser_y} ${joint_laser_z}" rpy="0 0 0" />
     </joint>
 </robot>
