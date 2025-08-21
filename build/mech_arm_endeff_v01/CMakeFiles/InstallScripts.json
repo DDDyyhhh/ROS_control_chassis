@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/mech_arm_endeff_v01/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/mech_arm_endeff_v01/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/mech_arm_endeff_v01/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/mech_arm_endeff_v01/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

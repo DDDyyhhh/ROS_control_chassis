@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/bspline/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/bspline/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/bspline/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/bspline/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,12 @@
+[01m[K/home/orangepi/catkin_ws/src/point_lio_unilidar/src/laserMapping_STM32.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/point_lio_unilidar/src/laserMapping_STM32.cpp:1575:54:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid publish_odometry(const ros::Publisher&, tf::TransformBroadcaster&)[m[K’
+ 1575 |                     publish_odometry(pubOdomAftMapped[01;31m[K)[m[K;
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/point_lio_unilidar/src/laserMapping_STM32.cpp:863:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  863 | void [01;36m[Kpublish_odometry[m[K(const ros::Publisher &pubOdomAftMapped, tf::TransformBroadcaster &tf_broadcaster)
+      |      [01;36m[K^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pointlio_mapping_STM32.dir/build.make:135：CMakeFiles/pointlio_mapping_STM32.dir/src/laserMapping_STM32.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:3089：CMakeFiles/pointlio_mapping_STM32.dir/all] 错误 2
+make[1]: *** 正在等待未完成的任务....
+make: *** [Makefile:146：all] 错误 2

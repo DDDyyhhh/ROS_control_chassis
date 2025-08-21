@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/rviz_plugins/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rviz_plugins/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rviz_plugins/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rviz_plugins/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

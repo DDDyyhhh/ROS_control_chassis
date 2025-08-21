@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/pointcloud_fuser/lib/pkgconfig/pointcloud_fuser.pc

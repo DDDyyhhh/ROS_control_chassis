@@ -1,0 +1,21 @@
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_VerticalOccupancyGridList[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_MultiOccupancyGrid[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_MultiSparseMap3D[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_SparseMap3D[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_nodejs[0m
+[ 20%] [0mBuilt target multi_map_server_generate_messages_py[0m
+[ 37%] [0mBuilt target multi_map_server_generate_messages_cpp[0m
+[ 58%] [0mBuilt target multi_map_server_generate_messages_eus[0m
+[ 75%] [0mBuilt target multi_map_server_generate_messages_lisp[0m
+[ 91%] [0mBuilt target multi_map_server_generate_messages_nodejs[0m
+[ 91%] [0mBuilt target multi_map_server_generate_messages[0m
+[100%] [0mBuilt target multi_map_visualization[0m

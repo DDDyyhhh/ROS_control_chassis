@@ -1,0 +1,23 @@
+[ 17%] [0mBuilt target octovis-static[0m
+[ 35%] [0mBuilt target octovis-shared[0m
+[100%] [0mBuilt target octovis[0m
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/octovis
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctovis.a
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctovis.so.1.9.8
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctovis.so.1.9
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctovis.so
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octovis/octovis-targets.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octovis/octovis-targets-release.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/ColorOcTreeDrawer.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/OcTreeDrawer.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/OcTreeRecord.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/PointcloudDrawer.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/SceneObject.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/SelectionBox.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octovis/TrajectoryDrawer.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octovis/octovis-config.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octovis/octovis-config-version.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octovis/package.xml
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/ament_index/resource_index/packages/octovis

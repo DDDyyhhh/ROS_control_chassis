@@ -1,0 +1,7 @@
+[ 40%] [0mBuilt target moveit_warehouse[0m
+[ 50%] [0mBuilt target moveit_warehouse_broadcast[0m
+[ 60%] [0mBuilt target moveit_save_to_warehouse[0m
+[ 70%] [0mBuilt target moveit_warehouse_save_as_text[0m
+[ 80%] [0mBuilt target moveit_warehouse_import_from_text[0m
+[ 90%] [0mBuilt target moveit_init_demo_warehouse[0m
+[100%] [0mBuilt target moveit_warehouse_services[0m

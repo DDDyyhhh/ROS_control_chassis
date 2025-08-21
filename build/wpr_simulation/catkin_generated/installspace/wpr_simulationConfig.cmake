@@ -68,7 +68,7 @@ set(wpr_simulation_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(wpr_simulation_SOURCE_PREFIX /home/orangepi/catkin_ws/src/wpr_simulation)
-  set(wpr_simulation_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(wpr_simulation_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/wpr_simulation)
   set(wpr_simulation_INSTALL_PREFIX "")
   set(wpr_simulation_PREFIX ${wpr_simulation_DEVEL_PREFIX})
 else()

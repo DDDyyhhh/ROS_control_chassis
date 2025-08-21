@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_visual_tools/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_visual_tools/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_visual_tools/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_visual_tools/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

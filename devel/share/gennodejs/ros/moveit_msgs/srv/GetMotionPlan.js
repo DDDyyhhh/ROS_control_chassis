@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/moveit_msgs/share/gennodejs/ros/moveit_msgs/srv/GetMotionPlan.js

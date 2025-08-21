@@ -68,7 +68,7 @@ set(rplidar_ros_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(rplidar_ros_SOURCE_PREFIX /home/orangepi/catkin_ws/src/rplidar_ros)
-  set(rplidar_ros_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(rplidar_ros_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/rplidar_ros)
   set(rplidar_ros_INSTALL_PREFIX "")
   set(rplidar_ros_PREFIX ${rplidar_ros_DEVEL_PREFIX})
 else()

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/orangepi/catkin_ws/devel/lib/wpr_simulation/demo_cv_image"
-  "/home/orangepi/catkin_ws/devel/lib/wpr_simulation/demo_cv_image.pdb"
+  "/home/orangepi/catkin_ws/devel/.private/wpr_simulation/lib/wpr_simulation/demo_cv_image"
+  "/home/orangepi/catkin_ws/devel/.private/wpr_simulation/lib/wpr_simulation/demo_cv_image.pdb"
   "CMakeFiles/demo_cv_image.dir/src/demo_cv_image.cpp.o"
+  "CMakeFiles/demo_cv_image.dir/src/demo_cv_image.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

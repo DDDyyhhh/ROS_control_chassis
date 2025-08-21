@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/pointcloud_fuser/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/pointcloud_fuser/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/pointcloud_fuser/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/pointcloud_fuser/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

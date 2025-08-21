@@ -1,0 +1,32 @@
+# --- 频率与范围 ---
+sensing_rate: 10.0
+sensing_horizon: 5.0
+estimation_rate: 10.0
+
+# --- 地图尺寸与分辨率 ---
+map:
+  x_size: 20.0
+  y_size: 20.0
+  z_size: 2.0
+  resolution: 0.1
+
+# --- 其他参数 ---
+frame_id: "map"
+use_global_map: true
+local_map_margin: 20
+b_clear_obs: 1
+is_2d: true
+p_min_z: 0.05
+p_max_z: 1.0
+ground_height: 0.0
+ceil_height: 2.0
+is_rgb_render: false
+rgb_render_max_dist: 5.0
+
+
+# 【【【关键添加！！！】】】
+# 是否发布用于可视化的ESDF地图点云
+is_vis_map: true
+
+p_min_z: 0.05
+p_max_z: 1.0

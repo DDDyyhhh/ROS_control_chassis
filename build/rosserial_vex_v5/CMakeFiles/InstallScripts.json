@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/rosserial_vex_v5/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rosserial_vex_v5/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rosserial_vex_v5/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rosserial_vex_v5/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

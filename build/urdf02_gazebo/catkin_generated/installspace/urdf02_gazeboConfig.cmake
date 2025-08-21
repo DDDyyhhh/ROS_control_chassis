@@ -68,7 +68,7 @@ set(urdf02_gazebo_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(urdf02_gazebo_SOURCE_PREFIX /home/orangepi/catkin_ws/src/urdf02_gazebo)
-  set(urdf02_gazebo_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(urdf02_gazebo_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/urdf02_gazebo)
   set(urdf02_gazebo_INSTALL_PREFIX "")
   set(urdf02_gazebo_PREFIX ${urdf02_gazebo_DEVEL_PREFIX})
 else()

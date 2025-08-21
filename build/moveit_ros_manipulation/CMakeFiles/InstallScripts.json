@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_ros_manipulation/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_manipulation/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_manipulation/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_manipulation/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_manipulation/pick_place/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_manipulation/move_group_pick_place_capability/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

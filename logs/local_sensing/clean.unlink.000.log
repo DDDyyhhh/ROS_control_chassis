@@ -1,0 +1,4 @@
+Unlinking: /home/orangepi/catkin_ws/devel/lib/local_sensing/local_sensing_node
+Unlinking: /home/orangepi/catkin_ws/devel/lib/pkgconfig/local_sensing.pc
+Unlinking: /home/orangepi/catkin_ws/devel/share/local_sensing/cmake/local_sensingConfig.cmake
+Unlinking: /home/orangepi/catkin_ws/devel/share/local_sensing/cmake/local_sensingConfig-version.cmake

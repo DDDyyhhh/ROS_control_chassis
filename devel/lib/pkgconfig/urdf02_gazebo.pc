@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: urdf02_gazebo
-Description: Description of urdf02_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/urdf02_gazebo/lib/pkgconfig/urdf02_gazebo.pc

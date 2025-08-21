@@ -1,0 +1,19 @@
+[  0%] [0mBuilt target _plan_manage_generate_messages_check_deps_Bspline[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[ 14%] [0mBuilt target plan_manage_generate_messages_py[0m
+[ 50%] [0mBuilt target fast_planner_node[0m
+[ 57%] [0mBuilt target plan_manage_generate_messages_cpp[0m
+[ 71%] [0mBuilt target plan_manage_generate_messages_eus[0m
+[ 78%] [0mBuilt target plan_manage_generate_messages_lisp[0m
+[ 85%] [0mBuilt target plan_manage_generate_messages_nodejs[0m
+[ 85%] [0mBuilt target plan_manage_generate_messages[0m
+[100%] [0mBuilt target traj_server[0m

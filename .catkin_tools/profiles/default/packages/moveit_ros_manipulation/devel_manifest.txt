@@ -1,0 +1,15 @@
+moveit/moveit_ros/manipulation
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/include/moveit_ros_manipulation/PickPlaceDynamicReconfigureConfig.h /home/orangepi/catkin_ws/devel/include/moveit_ros_manipulation/PickPlaceDynamicReconfigureConfig.h
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/libmoveit_move_group_pick_place_capability.so.1.1.16 /home/orangepi/catkin_ws/devel/lib/libmoveit_move_group_pick_place_capability.so.1.1.16
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.so.1.1.16 /home/orangepi/catkin_ws/devel/lib/libmoveit_pick_place_planner.so.1.1.16
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/libmoveit_pick_place_planner.so /home/orangepi/catkin_ws/devel/lib/libmoveit_pick_place_planner.so
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/libmoveit_move_group_pick_place_capability.so /home/orangepi/catkin_ws/devel/lib/libmoveit_move_group_pick_place_capability.so
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/python3/dist-packages/moveit_ros_manipulation/__init__.py /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/moveit_ros_manipulation/__init__.py
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/python3/dist-packages/moveit_ros_manipulation/cfg/__init__.py /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/moveit_ros_manipulation/cfg/__init__.py
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/python3/dist-packages/moveit_ros_manipulation/cfg/PickPlaceDynamicReconfigureConfig.py /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/moveit_ros_manipulation/cfg/PickPlaceDynamicReconfigureConfig.py
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/lib/pkgconfig/moveit_ros_manipulation.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/moveit_ros_manipulation.pc
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/share/moveit_ros_manipulation/docs/PickPlaceDynamicReconfigureConfig.wikidoc /home/orangepi/catkin_ws/devel/share/moveit_ros_manipulation/docs/PickPlaceDynamicReconfigureConfig.wikidoc
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/share/moveit_ros_manipulation/docs/PickPlaceDynamicReconfigureConfig.dox /home/orangepi/catkin_ws/devel/share/moveit_ros_manipulation/docs/PickPlaceDynamicReconfigureConfig.dox
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/share/moveit_ros_manipulation/docs/PickPlaceDynamicReconfigureConfig-usage.dox /home/orangepi/catkin_ws/devel/share/moveit_ros_manipulation/docs/PickPlaceDynamicReconfigureConfig-usage.dox
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/share/moveit_ros_manipulation/cmake/moveit_ros_manipulationConfig.cmake /home/orangepi/catkin_ws/devel/share/moveit_ros_manipulation/cmake/moveit_ros_manipulationConfig.cmake
+/home/orangepi/catkin_ws/devel/.private/moveit_ros_manipulation/share/moveit_ros_manipulation/cmake/moveit_ros_manipulationConfig-version.cmake /home/orangepi/catkin_ws/devel/share/moveit_ros_manipulation/cmake/moveit_ros_manipulationConfig-version.cmake

@@ -1,0 +1,37 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/traj_utils.dir/src/planning_visualization.cpp.o[0m
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawBsplinesPhase1(std::vector<fast_planner::NonUniformBspline>&, double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:181:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::NonUniformBspline>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  181 |   for (int i = 0; [01;35m[Ki < bsplines.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawBsplinesPhase2(std::vector<fast_planner::NonUniformBspline>&, double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:196:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::NonUniformBspline>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  196 |   for (int i = 0; [01;35m[Ki < bsplines.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawTopoGraph(std::__cxx11::list<std::shared_ptr<fast_planner::GraphNode> >&, double, double, const Vector4d&, const Vector4d&, const Vector4d&, int)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:257:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::shared_ptr<fast_planner::GraphNode> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  257 |     for (int k = 0; [01;35m[Kk < (*iter)->neighbors_.size()[m[K; ++k) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawTopoPathsPhase2(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:279:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  279 |   for (int i = 0; [01;35m[Ki < paths.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:282:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  282 |     for (int j = 0; [01;35m[Kj < paths[i].size() - 1[m[K; ++j) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawTopoPathsPhase1(std::vector<std::vector<Eigen::Matrix<double, 3, 1> > >&, double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:303:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  303 |   for (int i = 0; [01;35m[Ki < paths.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:306:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  306 |     for (int j = 0; [01;35m[Kj < paths[i].size() - 1[m[K; ++j) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawPrediction(fast_planner::ObjPrediction, double, const Vector4d&, int)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:341:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::PolynomialPrediction>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  341 |   for (int i = 0; [01;35m[Ki < pred->size()[m[K; i++) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::PlanningVisualization::drawYawPath(fast_planner::NonUniformBspline&, const std::vector<double>&, const double&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/traj_utils/src/planning_visualization.cpp:375:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  375 |   for (int i = 0; [01;35m[Ki < yaw.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~[m[K
+[100%] [1m[32mLinking CXX shared library /home/orangepi/catkin_ws/devel/.private/traj_utils/lib/libtraj_utils.so[0m
+[100%] [0mBuilt target traj_utils[0m

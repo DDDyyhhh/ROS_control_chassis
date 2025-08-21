@@ -1,0 +1,13 @@
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:33:10:[m[K [01;31m[Kfatal error: [m[Ktraj_generator/polynomial_traj.hpp: 没有那个文件或目录
+   33 | #include [01;31m[K<traj_generator/polynomial_traj.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/poly_traj.dir/build.make:93：CMakeFiles/poly_traj.dir/src/traj_generator.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:27[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+make[1]: *** [CMakeFiles/Makefile2:810：CMakeFiles/poly_traj.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

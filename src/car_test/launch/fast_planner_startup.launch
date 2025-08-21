@@ -1,0 +1,38 @@
+<launch>
+    <!-- ======================= 参数加载 ======================= -->
+    <!-- 我们将所有参数都加载到全局，但这次我们会确保yaml文件是干净的 -->
+    <rosparam command="load" file="$(find car_test)/params/so3_control_params.yaml"/>
+    <rosparam command="load" file="$(find car_test)/params/fast_planner_params.yaml" />
+    <rosparam command="load" file="$(find car_test)/params/sensing_params.yaml" ns="local_sensing" />
+    <!-- 【【【关键修改1】】】
+         我们把 sensing_params.yaml 的内容加载到全局的 /local_sensing 命名空间下。
+         这样，/local_sensing/sensing_rate 这个参数就存在了。
+    -->
+    
+    <!-- ======================= 启动 Nodelet Manager ======================= -->
+    <node pkg="nodelet" type="nodelet" name="fast_planner_manager" args="manager" output="screen" />
+    
+    <!-- ======================= 核心节点 ======================= -->
+    
+    <!-- A. 启动感知节点 -->
+    <node pkg="local_sensing" type="local_sensing_node" name="local_sensing_node" output="screen">
+        <remap from="~global_map" to="/pointlio/cloud_registered"/>
+        <remap from="~odometry" to="/pointlio/odom"/>
+    </node>
+
+    <!-- B. 启动规划节点 -->
+    <node pkg="plan_manage" type="fast_planner_node" name="fast_planner_node" output="screen">
+    </node>
+    
+    <!-- C. 启动目标点生成器 -->
+    <node pkg="waypoint_generator" type="waypoint_generator" name="waypoint_generator" output="screen">
+    </node>
+
+    <!-- D. 加载控制器 Nodelet -->
+    <node pkg="nodelet" type="nodelet" name="so3_control_nodelet" 
+          args="load so3_control/SO3ControlNodelet fast_planner_manager" output="screen">
+        <remap from="~cmd" to="/fast_planner_node/position_cmd"/>
+        <remap from="~odom" to="/pointlio/odom"/>
+        <remap from="~ctrl" to="/cmd_vel"/>
+    </node>
+</launch>

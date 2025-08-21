@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/pcl_render_node.dir/src/pointcloud_render_node.cpp.o[0m
+[100%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/local_sensing_node/lib/local_sensing_node/pcl_render_node[0m
+[100%] [0mBuilt target pcl_render_node[0m

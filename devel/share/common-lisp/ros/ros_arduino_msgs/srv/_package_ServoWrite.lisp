@@ -1,6 +1,1 @@
-(cl:in-package ros_arduino_msgs-srv)
-(cl:export '(ID-VAL
-          ID
-          VALUE-VAL
-          VALUE
-))
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs/share/common-lisp/ros/ros_arduino_msgs/srv/_package_ServoWrite.lisp

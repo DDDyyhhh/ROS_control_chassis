@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/moveit_msgs/lib/pkgconfig/moveit_msgs.pc

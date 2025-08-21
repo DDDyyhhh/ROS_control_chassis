@@ -1,0 +1,8 @@
+[01m[K/home/orangepi/catkin_ws/src/lsx10/lslidar_driver/src/lsiosr.cpp:[m[K In member function ‘[01m[Kint lslidar_driver::LSIOSR::close()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/lsx10/lslidar_driver/src/lsiosr.cpp:386:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  386 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/lsx10/lslidar_driver/src/input.cc:[m[K In member function ‘[01m[Kvirtual int lslidar_driver::InputPCAP::getPacket(lslidar_msgs::LslidarPacketPtr&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/lsx10/lslidar_driver/src/input.cc:414:2:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  414 |  [01;35m[K}[m[K
+      |  [01;35m[K^[m[K

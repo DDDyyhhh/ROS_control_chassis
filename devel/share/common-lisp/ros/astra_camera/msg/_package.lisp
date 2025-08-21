@@ -1,11 +1,1 @@
-(cl:defpackage astra_camera-msg
-  (:use )
-  (:export
-   "<DEVICEINFO>"
-   "DEVICEINFO"
-   "<EXTRINSICS>"
-   "EXTRINSICS"
-   "<METADATA>"
-   "METADATA"
-  ))
-
+/home/orangepi/catkin_ws/devel/.private/astra_camera/share/common-lisp/ros/astra_camera/msg/_package.lisp

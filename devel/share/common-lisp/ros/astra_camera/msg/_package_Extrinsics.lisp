@@ -1,8 +1,1 @@
-(cl:in-package astra_camera-msg)
-(cl:export '(HEADER-VAL
-          HEADER
-          ROTATION-VAL
-          ROTATION
-          TRANSLATION-VAL
-          TRANSLATION
-))
+/home/orangepi/catkin_ws/devel/.private/astra_camera/share/common-lisp/ros/astra_camera/msg/_package_Extrinsics.lisp

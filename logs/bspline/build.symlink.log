@@ -1,0 +1,4 @@
+Linked: (/home/orangepi/catkin_ws/devel/.private/bspline/lib/libbspline.so, /home/orangepi/catkin_ws/devel/lib/libbspline.so)
+Linked: (/home/orangepi/catkin_ws/devel/.private/bspline/lib/pkgconfig/bspline.pc, /home/orangepi/catkin_ws/devel/lib/pkgconfig/bspline.pc)
+Linked: (/home/orangepi/catkin_ws/devel/.private/bspline/share/bspline/cmake/bsplineConfig-version.cmake, /home/orangepi/catkin_ws/devel/share/bspline/cmake/bsplineConfig-version.cmake)
+Linked: (/home/orangepi/catkin_ws/devel/.private/bspline/share/bspline/cmake/bsplineConfig.cmake, /home/orangepi/catkin_ws/devel/share/bspline/cmake/bsplineConfig.cmake)

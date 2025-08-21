@@ -1,0 +1,6 @@
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_python/lib/rosserial_python/serial_node.py, /home/orangepi/catkin_ws/devel/lib/rosserial_python/serial_node.py)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_python/lib/rosserial_python/message_info_service.py, /home/orangepi/catkin_ws/devel/lib/rosserial_python/message_info_service.py)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_python/lib/python3/dist-packages/rosserial_python/__init__.py, /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/rosserial_python/__init__.py)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_python/lib/pkgconfig/rosserial_python.pc, /home/orangepi/catkin_ws/devel/lib/pkgconfig/rosserial_python.pc)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake, /home/orangepi/catkin_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig-version.cmake)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_python/share/rosserial_python/cmake/rosserial_pythonConfig.cmake, /home/orangepi/catkin_ws/devel/share/rosserial_python/cmake/rosserial_pythonConfig.cmake)

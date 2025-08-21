@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: car_test
-Description: Description of car_test
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/car_test/lib/pkgconfig/car_test.pc

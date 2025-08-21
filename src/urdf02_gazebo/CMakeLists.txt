@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5.0)
 project(urdf02_gazebo)
 
 ## Compile as C++11, supported in ROS Kinetic and newer

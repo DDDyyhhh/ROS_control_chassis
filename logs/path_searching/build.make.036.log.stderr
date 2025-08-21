@@ -1,0 +1,24 @@
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:[m[K In member function ‘[01m[Kint fast_planner::KinodynamicAstar::search(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, bool, bool, double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:180:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  180 |     for (int i = 0; [01;35m[Ki < inputs.size()[m[K; ++i)
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:181:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  181 |       for (int j = 0; [01;35m[Kj < durations.size()[m[K; ++j)
+      |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:248:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::PathNode*>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  248 |         for (int j = 0; [01;35m[Kj < tmp_expand_nodes.size()[m[K; ++j)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:77:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kneighbor[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   77 |   PathNodePtr [01;35m[Kneighbor[m[K = NULL;
+      |               [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:[m[K At global scope:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:851:5:[m[K [01;31m[Kerror: [m[K‘[01m[KKinodynamicAstar[m[K’ has not been declared
+  851 | int [01;31m[KKinodynamicAstar[m[K::getTrajPtsNum()
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:[m[K In function ‘[01m[Kint getTrajPtsNum()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp:853:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_nodes_[m[K’ was not declared in this scope
+  853 |   return [01;31m[Kpath_nodes_[m[K.size();
+      |          [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/path_searching.dir/build.make:79：CMakeFiles/path_searching.dir/src/kinodynamic_astar.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:1305：CMakeFiles/path_searching.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

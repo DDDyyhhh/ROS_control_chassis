@@ -41,7 +41,7 @@ obstacle_layer:
   point_cloud_sensor: {
     sensor_frame: map,       # 点云在其自身的坐标系unilidar_lidar
     data_type: PointCloud2,             # 【重要】数据类型是 PointCloud2
-    topic: /pointlio/cloud_registered_body,  # /pointlio/cloud_registered,  #/unilidar/cloud,             # 【重要】直接订阅原始的 3D 点云话题
+    topic: /fused_world_pointcloud,  # /pointlio/cloud_registered,  #/unilidar/cloud,             # 【重要】直接订阅原始的 3D 点云话题
     marking: true,                      # 用它来标记障碍物
     clearing: true,                     # 也用它来清除障碍物（通过 raytracing）
     # 【新增】告诉代价地图，这是一个 3D 传感器，需要处理 Z 轴

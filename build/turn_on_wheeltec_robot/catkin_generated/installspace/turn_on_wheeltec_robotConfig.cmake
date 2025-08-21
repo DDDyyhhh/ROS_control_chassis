@@ -68,7 +68,7 @@ set(turn_on_wheeltec_robot_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(turn_on_wheeltec_robot_SOURCE_PREFIX /home/orangepi/catkin_ws/src/turn_on_wheeltec_robot)
-  set(turn_on_wheeltec_robot_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(turn_on_wheeltec_robot_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/turn_on_wheeltec_robot)
   set(turn_on_wheeltec_robot_INSTALL_PREFIX "")
   set(turn_on_wheeltec_robot_PREFIX ${turn_on_wheeltec_robot_DEVEL_PREFIX})
 else()

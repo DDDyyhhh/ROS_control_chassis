@@ -1,0 +1,83 @@
+[  0%] [0mBuilt target nav_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_VerticalOccupancyGridList[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_MultiOccupancyGrid[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_MultiSparseMap3D[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_SparseMap3D[0m
+[ 15%] [0mBuilt target multi_map_server_generate_messages_cpp[0m
+[ 34%] [0mBuilt target multi_map_server_generate_messages_eus[0m
+[ 53%] [0mBuilt target multi_map_server_generate_messages_py[0m
+[ 69%] [0mBuilt target multi_map_server_generate_messages_lisp[0m
+[ 84%] [0mBuilt target multi_map_server_generate_messages_nodejs[0m
+[ 84%] [0mBuilt target multi_map_server_generate_messages[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/multi_map_server.dir/src/multi_map_server.cc.o[0m
+[ 92%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/multi_map_server/lib/multi_map_server/multi_map_visualization[0m
+[ 96%] [0mBuilt target multi_map_visualization[0m
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:23:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_server_3d_new[m[K’ does not name a type
+   23 | [01;31m[Kmap_server_3d_new[m[K::MultiOccupancyGrid grids2d;
+      | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:[m[K In function ‘[01m[Kvoid map2d_callback(const ConstPtr&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:33:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrids2d[m[K’ was not declared in this scope
+   33 |   if ([01;31m[Kgrids2d[m[K.maps.size() == 0)
+      |       [01;31m[K^~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:43:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Map2D[m[K’ has no member named ‘[01m[Kget_map[m[K’
+   43 |     maps2d[maps2dCnt-1].[01;31m[Kget_map[m[K(m);
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[KmapMatcher[m[K’ was not declared in this scope
+   44 |     [01;31m[KmapMatcher[m[K.AddCostMap(m);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:54:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrids2d[m[K’ was not declared in this scope
+   54 |   pub1.publish([01;31m[Kgrids2d[m[K);
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:56:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Map2D[m[K’ has no member named ‘[01m[Kupdate[m[K’; did you mean ‘[01m[Kbool Map2D::updated[m[K’? (accessible via ‘[01m[Kbool Map2D::Updated()[m[K’)
+   56 |   maps2d[maps2dCnt-1].[01;31m[Kupdate[m[K(*msg);
+      |                       [01;31m[K^~~~~~[m[K
+      |                       [32m[KUpdated()[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:[m[K In function ‘[01m[Kvoid scan_callback(const ConstPtr&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:68:7:[m[K [01;31m[Kerror: [m[K‘[01m[KmapLinks[m[K’ was not declared in this scope
+   68 |       [01;31m[KmapLinks[m[K.push_back(zeros<colvec>(3));
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:78:3:[m[K [01;31m[Kerror: [m[K‘[01m[KmapLinks[m[K’ was not declared in this scope
+   78 |   [01;31m[KmapLinks[m[K.back()(2)++;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:134:94:[m[K [01;31m[Kerror: [m[K‘[01m[KPROB_LASER_OCCUPIED[m[K’ was not declared in this scope; did you mean ‘[01m[KPROB_OCCUPIED[m[K’?
+  134 |     maps3d[maps3dCnt-1].SetOccupancyFromWorldFrame(scanMat(0,k), scanMat(1,k), scanMat(2,k), [01;31m[KPROB_LASER_OCCUPIED[m[K);
+      |                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                              [32m[KPROB_OCCUPIED[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:146:81:[m[K [01;31m[Kerror: [m[K‘[01m[KPROB_LASER_OCCUPIED[m[K’ was not declared in this scope; did you mean ‘[01m[KPROB_OCCUPIED[m[K’?
+  146 |         maps3d[maps3dCnt-1].SetOccupancyFromWorldFrame(pt(0)+x, pt(1)+y, pt(2), [01;31m[KPROB_LASER_OCCUPIED[m[K);
+      |                                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                 [32m[KPROB_OCCUPIED[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:149:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Map3D[m[K’ has no member named ‘[01m[KSetFloor[m[K’
+  149 |   maps3d[maps3dCnt-1].[01;31m[KSetFloor[m[K(currFloor);
+      |                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:176:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_server_3d_new[m[K’ has not been declared
+  176 |       [01;31m[Kmap_server_3d_new[m[K::MultiSparseMap3D msg;
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:177:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+  177 |       [01;31m[Kmsg[m[K.maps_origin = maps_origin;
+      |       [01;31m[K^~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:180:43:[m[K [01;31m[Kerror: [m[K‘[01m[KmapLinks[m[K’ was not declared in this scope
+  180 |         msg.maps_active.push_back((bool)(![01;31m[KmapLinks[m[K[k](0)) && mapLinks[k](2) > 50);
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:181:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_server_3d_new[m[K’ has not been declared
+  181 |         [01;31m[Kmap_server_3d_new[m[K::SparseMap3D m;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:182:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Map3D[m[K’ has no member named ‘[01m[KGetSparseMap3DMsg[m[K’
+  182 |         maps3d[k].[01;31m[KGetSparseMap3DMsg[m[K(m);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/multi_map_server/src/multi_map_server.cc:182:37:[m[K [01;31m[Kerror: [m[K‘[01m[Km[m[K’ was not declared in this scope
+  182 |         maps3d[k].GetSparseMap3DMsg([01;31m[Km[m[K);
+      |                                     [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/multi_map_server.dir/build.make:79：CMakeFiles/multi_map_server.dir/src/multi_map_server.cc.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3022：CMakeFiles/multi_map_server.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

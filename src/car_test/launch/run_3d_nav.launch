@@ -1,0 +1,87 @@
+<launch>   
+    <!-- =================================================================== -->
+    <!-- ==================== 1. 启动底层与SLAM ============================ -->
+    <!-- =================================================================== -->
+    
+    <!-- 启动与 STM32 的通信 (如果你的车是通过这个控制的) -->
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
+        <param name="port" value="/dev/ttyUSB0"/>
+        <param name="baud" value="115200"/>
+    </node>
+    
+    <!-- 加载机器人 URDF (这个launch文件必须启动 robot_state_publisher) -->
+    <include file="$(find mycar_description)/launch/car.launch" />
+    
+    <!-- 启动雷达驱动 -->
+    <include file="$(find unitree_lidar_ros)/launch/run_without_rviz.launch"/>
+    
+    <!-- 启动 Point-LIO SLAM -->
+    <!-- 注意可执行文件名要与 CMakeLists.txt 中 add_executable 的名字一致 -->
+    <node pkg="point_lio_unilidar" type="pointlio_mapping_STM32" name="laserMapping_STM32" output="screen">
+        <rosparam command="load" file="$(find point_lio_unilidar)/config/unilidar_l2_STM32.yaml" />
+        <!-- 下面两个参数是Point-LIO内部用的，通常在yaml里设置，这里写也可以 -->
+        <param name="map_frame" value="map" />
+        <param name="odom_frame" value="odom" />
+        <!-- 性能参数，根据你的OrangePi 5 Plus的实际运行情况调整 -->
+        <param name="point_filter_num" type="int" value="4"/> <!-- 建议值3-6，数值越大点越少，计算越快 -->
+        <param name="filter_size_surf" type="double" value="0.2" /> <!-- 建议值0.1-0.3 -->
+        <param name="filter_size_map" type="double" value="0.3" /> <!-- 建议值0.2-0.5 -->
+        <param name="cube_side_length" type="double" value="500" />
+    </node>
+
+    <!-- =================================================================== -->
+    <!-- ==================== 2. 启动Fast-Planner核心 ====================== -->
+    <!-- =================================================================== -->
+    
+    <!-- 【核心节点】 包含了感知和规划 -->
+    <node pkg="plan_manage" name="fast_planner_node" type="fast_planner_node" output="screen">
+        
+        <!-- (A) 数据流重映射 -->
+        <!-- 里程计输入: Fast-Planner需要的/odom_world 来自 Point-LIO发布的/pointlio/odom -->
+        <remap from="/odom_world" to="/pointlio/odom"/>
+        
+        <!-- 【【【关键修改】】】 -->
+        <!-- 地图输入: Fast-Planner需要的/sdf_map/cloud 来自 Point-LIO发布的、经过运动补偿的局部点云 -->
+        <remap from="/sdf_map/cloud" to="/pointlio/cloud_registered_body"/>
+        
+        <!-- (B) 加载所有参数 -->
+        <rosparam command="load" file="$(find car_test)/params/final_params.yaml" />
+    </node>
+
+    <!-- =================================================================== -->
+    <!-- ==================== 3. 启动辅助模块 ============================== -->
+    <!-- =================================================================== -->
+    
+    <!-- 轨迹服务器 -->
+    <node pkg="plan_manage" name="traj_server" type="traj_server" output="screen">
+        <remap from="/position_cmd" to="/fast_planner_node/position_cmd"/>
+        <remap from="/odom_world" to="/pointlio/odom"/>
+    </node>
+    
+    <!-- 目标点生成器 (用于在Rviz中点击"2D Nav Goal") -->
+    <node pkg="waypoint_generator" name="waypoint_generator" type="waypoint_generator" output="screen">
+        <remap from="~odom" to="/pointlio/odom"/>        
+        <remap from="~goal" to="/move_base_simple/goal"/>
+    </node>
+
+    <!-- =================================================================== -->
+    <!-- ==================== 4. 启动控制器 ================================ -->
+    <!-- =================================================================== -->
+    
+    <rosparam command="load" file="$(find car_test)/params/so3_control_params.yaml"/>
+    <node pkg="nodelet" type="nodelet" name="fast_planner_manager" args="manager" output="screen" />
+    <node pkg="nodelet" type="nodelet" name="so3_control_nodelet" 
+          args="load so3_control/SO3ControlNodelet fast_planner_manager" output="screen">
+        <remap from="~cmd" to="/fast_planner_node/position_cmd"/>
+        <remap from="~odom" to="/pointlio/odom"/>
+        <remap from="~ctrl" to="/cmd_vel"/>
+    </node>
+
+    <!-- =================================================================== -->
+    <!-- ==================== 5. 可视化 ==================================== -->
+    <!-- =================================================================== -->
+    
+    <!-- 强烈建议使用一个自定义的Rviz配置文件来同时显示SLAM和Fast-Planner的输出
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find car_test)/rviz/nav_debug.rviz" /> -->
+
+</launch>

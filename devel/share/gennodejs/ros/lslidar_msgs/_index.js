@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/orangepi/catkin_ws/devel/.private/lslidar_msgs/share/gennodejs/ros/lslidar_msgs/_index.js

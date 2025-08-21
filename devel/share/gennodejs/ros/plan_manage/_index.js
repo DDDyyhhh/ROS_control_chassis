@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/plan_manage/share/gennodejs/ros/plan_manage/_index.js

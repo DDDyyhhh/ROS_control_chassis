@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/py_bindings_tools/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/common_planning_interface_objects/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/planning_scene_interface/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/move_group_interface/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/robot_interface/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_planning_interface/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

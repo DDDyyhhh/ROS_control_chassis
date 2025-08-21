@@ -1,0 +1,48 @@
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_VerticalOccupancyGridList[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_MultiOccupancyGrid[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_MultiSparseMap3D[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target _multi_map_server_generate_messages_check_deps_SparseMap3D[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_nodejs[0m
+[  4%] [1m[34mGenerating C++ code from multi_map_server/MultiOccupancyGrid.msg[0m
+[  8%] [1m[34mGenerating Python from MSG multi_map_server/MultiOccupancyGrid[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/multi_map_visualization.dir/src/multi_map_visualization.cc.o[0m
+[ 16%] [1m[34mGenerating Python from MSG multi_map_server/MultiSparseMap3D[0m
+[ 20%] [1m[34mGenerating C++ code from multi_map_server/MultiSparseMap3D.msg[0m
+[ 25%] [1m[34mGenerating Python from MSG multi_map_server/SparseMap3D[0m
+[ 29%] [1m[34mGenerating Python from MSG multi_map_server/VerticalOccupancyGridList[0m
+[ 33%] [1m[34mGenerating C++ code from multi_map_server/SparseMap3D.msg[0m
+[ 37%] [1m[34mGenerating C++ code from multi_map_server/VerticalOccupancyGridList.msg[0m
+[ 41%] [1m[34mGenerating EusLisp code from multi_map_server/MultiOccupancyGrid.msg[0m
+[ 41%] [0mBuilt target multi_map_server_generate_messages_cpp[0m
+[ 45%] [1m[34mGenerating EusLisp code from multi_map_server/MultiSparseMap3D.msg[0m
+[ 50%] [1m[34mGenerating Lisp code from multi_map_server/MultiOccupancyGrid.msg[0m
+[ 54%] [1m[34mGenerating Lisp code from multi_map_server/MultiSparseMap3D.msg[0m
+[ 58%] [1m[34mGenerating Javascript code from multi_map_server/MultiOccupancyGrid.msg[0m
+[ 62%] [1m[34mGenerating EusLisp code from multi_map_server/SparseMap3D.msg[0m
+[ 66%] [1m[34mGenerating Python msg __init__.py for multi_map_server[0m
+[ 70%] [1m[34mGenerating Javascript code from multi_map_server/MultiSparseMap3D.msg[0m
+[ 75%] [1m[34mGenerating Javascript code from multi_map_server/SparseMap3D.msg[0m
+[ 79%] [1m[34mGenerating Javascript code from multi_map_server/VerticalOccupancyGridList.msg[0m
+[ 83%] [1m[34mGenerating Lisp code from multi_map_server/SparseMap3D.msg[0m
+[ 87%] [1m[34mGenerating EusLisp code from multi_map_server/VerticalOccupancyGridList.msg[0m
+[ 91%] [1m[34mGenerating Lisp code from multi_map_server/VerticalOccupancyGridList.msg[0m
+[ 91%] [0mBuilt target multi_map_server_generate_messages_nodejs[0m
+[ 91%] [0mBuilt target multi_map_server_generate_messages_lisp[0m
+[ 95%] [0mBuilt target multi_map_server_generate_messages_eus[0m
+[ 95%] [0mBuilt target multi_map_server_generate_messages_py[0m
+[ 95%] [0mBuilt target multi_map_server_generate_messages[0m
+[100%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/multi_map_server/lib/multi_map_server/multi_map_visualization[0m
+/usr/bin/ld: 找不到 -lpose_utils
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/multi_map_visualization.dir/build.make:127：/home/orangepi/catkin_ws/devel/.private/multi_map_server/lib/multi_map_server/multi_map_visualization] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3015：CMakeFiles/multi_map_visualization.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

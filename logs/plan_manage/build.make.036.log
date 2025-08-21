@@ -1,0 +1,87 @@
+[  0%] [0mBuilt target std_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target _plan_manage_generate_messages_check_deps_Bspline[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[  7%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/fast_planner_node.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/kino_replan_fsm.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/topo_replan_fsm.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o[0m
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/kino_replan_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::KinoReplanFSM::execFSMCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/kino_replan_fsm.cpp:133:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KREPLAN_NEW[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+  133 |   switch [01;35m[K([m[Kexec_state_) {
+      |          [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/kino_replan_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::KinoReplanFSM::checkCollisionCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/kino_replan_fsm.cpp:247:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_goal[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  247 |       bool            [01;35m[Knew_goal[m[K = false;
+      |                       [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::initPlanModules(ros::NodeHandle&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:49:83:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kuse_active_perception[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   49 |   bool use_geometric_path, use_kinodynamic_path, use_topo_path, use_optimization, [01;35m[Kuse_active_perception[m[K;
+      |                                                                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::kinodynamicReplan(Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d, Eigen::Vector3d)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:162:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_pos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  162 |   Eigen::Vector3d [01;35m[Kinit_pos[m[K = start_pt;
+      |                   [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:163:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_vel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  163 |   Eigen::Vector3d [01;35m[Kinit_vel[m[K = start_vel;
+      |                   [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:164:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kinit_acc[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  164 |   Eigen::Vector3d [01;35m[Kinit_acc[m[K = start_acc;
+      |                   [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::planGlobalTraj(const Vector3d&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:314:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  314 |   for (int i = 0; [01;35m[Ki < points.size() - 1[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kbool fast_planner::FastPlannerManager::topoReplan(bool)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:425:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  425 |       for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i) {
+      |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:431:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<Eigen::Matrix<double, 3, 1> > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  431 |       for (int i = 0; [01;35m[Ki < select_paths.size()[m[K; ++i) optimize_threads[i].join();
+      |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::refineTraj(fast_planner::NonUniformBspline&, double&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:459:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_iter[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  459 |   const int [01;35m[Kmax_iter[m[K = 1;
+      |             [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::reparamBspline(fast_planner::NonUniformBspline&, double, Eigen::MatrixXd&, double&, double&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:487:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kprev_num[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  487 |   int    [01;35m[Kprev_num[m[K    = bspline.getControlPoint().rows();
+      |          [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::optimizeTopoBspline(double, double, std::vector<Eigen::Matrix<double, 3, 1> >, int)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:532:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  532 |   if ([01;35m[Kguide_pt.size() != int(ctrl_pts.rows()) - 6[m[K) ROS_WARN("what guide");
+      |       [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::planYaw(const Vector3d&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:719:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  719 |   for (int i = 0; [01;35m[Ki < waypts.size()[m[K; ++i) path_yaw.push_back(waypts[i][0]);
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::TopoReplanFSM::execFSMCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:219:25:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart_pos[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  219 |         Eigen::Vector3d [01;35m[Kstart_pos[m[K = info->start_pos_;
+      |                         [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::TopoReplanFSM::checkCollisionCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:299:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knew_goal[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  299 |       bool         [01;35m[Knew_goal[m[K = false;
+      |                    [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:[m[K In member function ‘[01m[Kbool fast_planner::TopoReplanFSM::callSearchAndOptimization()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:372:50:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  372 | bool TopoReplanFSM::callSearchAndOptimization() {[01;35m[K}[m[K
+      |                                                  [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:[m[K In member function ‘[01m[Kvoid fast_planner::FastPlannerManager::findCollisionRange(std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:635:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kt_e[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  635 |   sn = ceil([01;35m[K(t_mp - t_e)[m[K / dt);
+      |             [01;35m[K~~~~~~^~~~~~[m[K
+[ 35%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node[0m
+/usr/bin/ld: CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o: in function `fast_planner::FastPlannerManager::checkMapStatus(ros::TimerEvent const&)':
+/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:98: undefined reference to `SDFMap::getReceivedCloudSize()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:321：/home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3648：CMakeFiles/fast_planner_node.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

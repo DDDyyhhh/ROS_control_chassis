@@ -1,0 +1,27 @@
+[  5%] [0mBuilt target octomath[0m
+[ 10%] [0mBuilt target octomath-static[0m
+[ 24%] [0mBuilt target octomap[0m
+[ 37%] [0mBuilt target octomap-static[0m
+[ 40%] [0mBuilt target graph2tree[0m
+[ 43%] [0mBuilt target log2graph[0m
+[ 45%] [0mBuilt target binvox2bt[0m
+[ 48%] [0mBuilt target bt2vrml[0m
+[ 51%] [0mBuilt target edit_octree[0m
+[ 54%] [0mBuilt target convert_octree[0m
+[ 56%] [0mBuilt target eval_octree_accuracy[0m
+[ 59%] [0mBuilt target compare_octrees[0m
+[ 62%] [0mBuilt target normals_example[0m
+[ 64%] [0mBuilt target simple_example[0m
+[ 67%] [0mBuilt target intersection_example[0m
+[ 70%] [0mBuilt target octree2pointcloud[0m
+[ 72%] [0mBuilt target test_raycasting[0m
+[ 75%] [0mBuilt target test_iterators[0m
+[ 78%] [0mBuilt target test_io[0m
+[ 81%] [0mBuilt target test_changedkeys[0m
+[ 83%] [0mBuilt target test_scans[0m
+[ 86%] [0mBuilt target test_color_tree[0m
+[ 89%] [0mBuilt target color_tree_histogram[0m
+[ 91%] [0mBuilt target test_mapcollection[0m
+[ 94%] [0mBuilt target test_pruning[0m
+[ 97%] [0mBuilt target test_bbx[0m
+[100%] [0mBuilt target unit_tests[0m

@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/map_generator/lib/pkgconfig/map_generator.pc

@@ -1,0 +1,8 @@
+prefix=/home/orangepi/catkin_ws/install
+
+Name: pointcloud_fuser
+Description: Description of pointcloud_fuser
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

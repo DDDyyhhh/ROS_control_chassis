@@ -1,6 +1,1 @@
-(cl:in-package ros_arduino_msgs-srv)
-(cl:export '(PIN-VAL
-          PIN
-          DIRECTION-VAL
-          DIRECTION
-))
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs/share/common-lisp/ros/ros_arduino_msgs/srv/_package_DigitalSetDirection.lisp

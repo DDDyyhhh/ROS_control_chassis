@@ -1,6 +1,1 @@
-(cl:in-package astra_camera-msg)
-(cl:export '(HEADER-VAL
-          HEADER
-          JSON_DATA-VAL
-          JSON_DATA
-))
+/home/orangepi/catkin_ws/devel/.private/astra_camera/share/common-lisp/ros/astra_camera/msg/_package_Metadata.lisp

@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/mech_arm_endeff_v01/lib/pkgconfig/mech_arm_endeff_v01.pc

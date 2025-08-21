@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/rviz_plugin_render_tools/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/robot_state_rviz_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/planning_scene_rviz_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/motion_planning_rviz_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_visualization/trajectory_rviz_plugin/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js

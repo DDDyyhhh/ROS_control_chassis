@@ -1,0 +1,8 @@
+prefix=/home/orangepi/catkin_ws/devel/.private/moveit_simple_controller_manager
+
+Name: moveit_simple_controller_manager
+Description: Description of moveit_simple_controller_manager
+Version: 1.1.16
+Cflags: -I/home/orangepi/catkin_ws/src/moveit/moveit_plugins/moveit_simple_controller_manager/include
+Libs: -L${prefix}/lib -lmoveit_simple_controller_manager
+Requires: actionlib control_msgs moveit_core roscpp

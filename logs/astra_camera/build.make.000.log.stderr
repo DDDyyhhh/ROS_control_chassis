@@ -1,0 +1,9 @@
+In file included from [01m[K/home/orangepi/catkin_ws/src/astra_camera/include/astra_camera/ob_camera_node.h:19[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_node.cpp:13[m[K:
+[01m[K/home/orangepi/catkin_ws/src/astra_camera/include/openni2/OpenNI.h:[m[K In member function ‘[01m[Kvoid astra_camera::OBCameraNode::reconfigureCallback(const astra_camera::AstraConfig&, uint32_t)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/astra_camera/include/openni2/OpenNI.h:287:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvideo_mode[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  287 |  void setPixelFormat(PixelFormat format) { [01;35m[Kthis->pixelFormat = (OniPixelFormat)format[m[K; }
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_node.cpp:884:23:[m[K [01;36m[Knote: [m[K‘[01m[Kvideo_mode[m[K’ was declared here
+  884 |     openni::VideoMode [01;36m[Kvideo_mode[m[K;
+      |                       [01;36m[K^~~~~~~~~~[m[K

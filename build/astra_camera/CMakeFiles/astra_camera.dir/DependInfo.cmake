@@ -1,49 +1,31 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/orangepi/catkin_ws/src/astra_camera/src/d2c_viewer.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/d2c_viewer.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_info.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/ob_camera_info.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_node.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/ob_camera_node.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_node_factory.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/ob_camera_node_factory.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_context.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/ob_context.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/point_cloud_proc/point_cloud_xyz.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/point_cloud_proc/point_cloud_xyzrgb.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/ros_service.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/ros_service.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/utils.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/utils.cpp.o"
-  "/home/orangepi/catkin_ws/src/astra_camera/src/uvc_camera_driver.cpp" "/home/orangepi/catkin_ws/build/astra_camera/CMakeFiles/astra_camera.dir/src/uvc_camera_driver.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "ROSCONSOLE_BACKEND_LOG4CXX"
-  "ROS_BUILD_SHARED_LIBS=1"
-  "ROS_PACKAGE_NAME=\"astra_camera\""
-  "astra_camera_EXPORTS"
-  "libuvc_VERSION_MAJOR="
-  "libuvc_VERSION_MINOR="
-  "libuvc_VERSION_PATCH="
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/orangepi/catkin_ws/devel/include"
-  "astra_camera/include"
-  "/home/orangepi/catkin_ws/src/astra_camera/include"
-  "/home/orangepi/catkin_ws/src/vision_opencv-noetic/cv_bridge/include"
-  "/home/orangepi/catkin_ws/src/vision_opencv-noetic/image_geometry/include"
-  "/opt/ros/noetic/include"
-  "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/include/opencv4"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/orangepi/catkin_ws/src/astra_camera/src/d2c_viewer.cpp" "CMakeFiles/astra_camera.dir/src/d2c_viewer.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/d2c_viewer.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_info.cpp" "CMakeFiles/astra_camera.dir/src/ob_camera_info.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/ob_camera_info.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_node.cpp" "CMakeFiles/astra_camera.dir/src/ob_camera_node.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/ob_camera_node.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_camera_node_factory.cpp" "CMakeFiles/astra_camera.dir/src/ob_camera_node_factory.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/ob_camera_node_factory.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/ob_context.cpp" "CMakeFiles/astra_camera.dir/src/ob_context.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/ob_context.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/point_cloud_proc/point_cloud_xyz.cpp" "CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyz.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/point_cloud_proc/point_cloud_xyzrgb.cpp" "CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/point_cloud_proc/point_cloud_xyzrgb.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/ros_service.cpp" "CMakeFiles/astra_camera.dir/src/ros_service.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/ros_service.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/utils.cpp" "CMakeFiles/astra_camera.dir/src/utils.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/utils.cpp.o.d"
+  "/home/orangepi/catkin_ws/src/astra_camera/src/uvc_camera_driver.cpp" "CMakeFiles/astra_camera.dir/src/uvc_camera_driver.cpp.o" "gcc" "CMakeFiles/astra_camera.dir/src/uvc_camera_driver.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/orangepi/catkin_ws/build/vision_opencv-noetic/cv_bridge/src/CMakeFiles/cv_bridge.dir/DependInfo.cmake"
-  "/home/orangepi/catkin_ws/build/vision_opencv-noetic/image_geometry/CMakeFiles/image_geometry.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

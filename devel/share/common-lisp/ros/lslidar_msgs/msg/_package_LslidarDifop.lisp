@@ -1,4 +1,1 @@
-(cl:in-package lslidar_msgs-msg)
-(cl:export '(RPM-VAL
-          RPM
-))
+/home/orangepi/catkin_ws/devel/.private/lslidar_msgs/share/common-lisp/ros/lslidar_msgs/msg/_package_LslidarDifop.lisp

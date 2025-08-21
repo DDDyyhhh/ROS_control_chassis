@@ -1,0 +1,4 @@
+Unlinking: /home/orangepi/catkin_ws/devel/lib/libso3_control_nodelet.so
+Unlinking: /home/orangepi/catkin_ws/devel/lib/pkgconfig/so3_control.pc
+Unlinking: /home/orangepi/catkin_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake
+Unlinking: /home/orangepi/catkin_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake

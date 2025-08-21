@@ -1,0 +1,6 @@
+rosserial/rosserial_vex_cortex
+/home/orangepi/catkin_ws/devel/.private/rosserial_vex_cortex/lib/python3/dist-packages/rosserial_vex_cortex/__init__.py /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/rosserial_vex_cortex/__init__.py
+/home/orangepi/catkin_ws/devel/.private/rosserial_vex_cortex/lib/pkgconfig/rosserial_vex_cortex.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/rosserial_vex_cortex.pc
+/home/orangepi/catkin_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/make_libraries.py /home/orangepi/catkin_ws/devel/share/rosserial_vex_cortex/make_libraries.py
+/home/orangepi/catkin_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake /home/orangepi/catkin_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig-version.cmake
+/home/orangepi/catkin_ws/devel/.private/rosserial_vex_cortex/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake /home/orangepi/catkin_ws/devel/share/rosserial_vex_cortex/cmake/rosserial_vex_cortexConfig.cmake

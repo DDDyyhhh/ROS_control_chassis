@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/orangepi/catkin_ws/devel/lib/libwpr_plugin.pdb"
-  "/home/orangepi/catkin_ws/devel/lib/libwpr_plugin.so"
+  "/home/orangepi/catkin_ws/devel/.private/wpr_simulation/lib/libwpr_plugin.pdb"
+  "/home/orangepi/catkin_ws/devel/.private/wpr_simulation/lib/libwpr_plugin.so"
   "CMakeFiles/wpr_plugin.dir/src/wpr_plugin.cpp.o"
+  "CMakeFiles/wpr_plugin.dir/src/wpr_plugin.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

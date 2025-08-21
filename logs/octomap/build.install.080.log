@@ -1,0 +1,84 @@
+[  5%] [0mBuilt target octomath[0m
+[ 10%] [0mBuilt target octomath-static[0m
+[ 24%] [0mBuilt target octomap[0m
+[ 37%] [0mBuilt target octomap-static[0m
+[ 40%] [0mBuilt target graph2tree[0m
+[ 43%] [0mBuilt target log2graph[0m
+[ 45%] [0mBuilt target binvox2bt[0m
+[ 48%] [0mBuilt target bt2vrml[0m
+[ 51%] [0mBuilt target edit_octree[0m
+[ 54%] [0mBuilt target convert_octree[0m
+[ 56%] [0mBuilt target eval_octree_accuracy[0m
+[ 59%] [0mBuilt target compare_octrees[0m
+[ 62%] [0mBuilt target simple_example[0m
+[ 64%] [0mBuilt target normals_example[0m
+[ 67%] [0mBuilt target intersection_example[0m
+[ 70%] [0mBuilt target octree2pointcloud[0m
+[ 72%] [0mBuilt target test_raycasting[0m
+[ 75%] [0mBuilt target test_iterators[0m
+[ 78%] [0mBuilt target test_io[0m
+[ 81%] [0mBuilt target test_changedkeys[0m
+[ 83%] [0mBuilt target test_scans[0m
+[ 86%] [0mBuilt target test_color_tree[0m
+[ 89%] [0mBuilt target color_tree_histogram[0m
+[ 91%] [0mBuilt target test_mapcollection[0m
+[ 94%] [0mBuilt target test_pruning[0m
+[ 97%] [0mBuilt target test_bbx[0m
+[100%] [0mBuilt target unit_tests[0m
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/AbstractOcTree.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/AbstractOccupancyOcTree.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/ColorOcTree.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/CountingOcTree.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/MCTables.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/MapCollection.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/MapCollection.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/MapNode.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/MapNode.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTree.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeBase.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeBaseImpl.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeBaseImpl.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeDataNode.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeDataNode.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeIterator.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeKey.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeNode.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OcTreeStamped.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OccupancyOcTreeBase.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/OccupancyOcTreeBase.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/Pointcloud.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/ScanGraph.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/octomap.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/octomap_deprecated.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/octomap_timing.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/octomap_types.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/octomap_utils.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/math/Pose6D.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/math/Quaternion.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/math/Utils.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/octomap/math/Vector3.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octomap/package.xml
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/ament_index/resource_index/packages/octomap
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octomap/octomap-config.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octomap/octomap-config-version.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/pkgconfig/octomap.pc
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomath.so.1.9.8
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomath.so.1.9
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomath.so
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomath.a
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomap.so.1.9.8
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomap.so.1.9
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomap.so
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/liboctomap.a
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octomap/octomap-targets.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/octomap/octomap-targets-release.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/graph2tree
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/log2graph
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/binvox2bt
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/bt2vrml
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/edit_octree
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/convert_octree
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/eval_octree_accuracy
+-- Up-to-date: /home/orangepi/catkin_ws/devel/bin/compare_octrees

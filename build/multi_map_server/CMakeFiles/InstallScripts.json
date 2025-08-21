@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/multi_map_server/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/multi_map_server/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/multi_map_server/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/multi_map_server/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/orangepi/catkin_ws/devel/lib/astra_camera/astra_camera_node"
-  "/home/orangepi/catkin_ws/devel/lib/astra_camera/astra_camera_node.pdb"
+  "/home/orangepi/catkin_ws/devel/.private/astra_camera/lib/astra_camera/astra_camera_node"
+  "/home/orangepi/catkin_ws/devel/.private/astra_camera/lib/astra_camera/astra_camera_node.pdb"
   "CMakeFiles/astra_camera_node.dir/src/main.cpp.o"
+  "CMakeFiles/astra_camera_node.dir/src/main.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

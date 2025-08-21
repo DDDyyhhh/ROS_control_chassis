@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/waypoint_generator/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/waypoint_generator/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/waypoint_generator/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/waypoint_generator/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

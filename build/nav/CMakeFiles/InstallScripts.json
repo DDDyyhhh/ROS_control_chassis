@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/nav/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/nav/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/nav/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/nav/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

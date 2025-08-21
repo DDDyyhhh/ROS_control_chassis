@@ -68,7 +68,7 @@ set(point_lio_unilidar_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(point_lio_unilidar_SOURCE_PREFIX /home/orangepi/catkin_ws/src/point_lio_unilidar)
-  set(point_lio_unilidar_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(point_lio_unilidar_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/point_lio_unilidar)
   set(point_lio_unilidar_INSTALL_PREFIX "")
   set(point_lio_unilidar_PREFIX ${point_lio_unilidar_DEVEL_PREFIX})
 else()

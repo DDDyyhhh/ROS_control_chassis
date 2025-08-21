@@ -1,0 +1,742 @@
+Not searching for unused variables given on the command line.
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/orangepi/catkin_ws/devel/.private/moveit_tutorials
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/orangepi/catkin_ws/devel;/opt/ros/noetic
+[36m--[0m This workspace overlays: /home/orangepi/catkin_ws/devel;/opt/ros/noetic
+[33mCMake Warning (dev) at /opt/ros/noetic/share/catkin/cmake/python.cmake:4 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/catkin/cmake/all.cmake:164 (include)
+  /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:20 (include)
+  CMakeLists.txt:4 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python3
+[36m--[0m Using Debian Python package layout
+[36m--[0m Using empy: /usr/lib/python3/dist-packages/em.py
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/orangepi/catkin_ws/build/moveit_tutorials/test_results
+[36m--[0m Forcing gtest/gmock from source, though one was otherwise available.
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[0mCMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0mCMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[33mCMake Warning (dev) at /usr/src/googletest/googletest/cmake/internal_utils.cmake:249 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+[36mCall Stack (most recent call first):[0m
+  /usr/src/googletest/googletest/CMakeLists.txt:91 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Found PythonInterp: /usr/bin/python3 (found version "3.8.10")
+[36m--[0m Using Python nosetests: /usr/bin/nosetests3
+[36m--[0m catkin 0.8.12
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[33mCMake Warning (dev) at CMakeLists.txt:24 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[36m--[0m Installing devel-space wrapper /home/orangepi/catkin_ws/src/moveit_tutorials/doc/move_group_python_interface/scripts/move_group_python_interface_tutorial.py to /home/orangepi/catkin_ws/devel/.private/moveit_tutorials/lib/moveit_tutorials
+[36m--[0m Installing devel-space wrapper /home/orangepi/catkin_ws/src/moveit_tutorials/doc/collision_environments/scripts/collision_scene_example.py to /home/orangepi/catkin_ws/devel/.private/moveit_tutorials/lib/moveit_tutorials
+[36m--[0m Configuring done (3.4s)
+[33mCMake Warning at doc/controller_configuration/CMakeLists.txt:1 (add_library):
+  Cannot generate a safe runtime search path for target
+  controller_manager_example because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/interactivity/CMakeLists.txt:3 (add_library):
+  Cannot generate a safe runtime search path for target interactivity_utils
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/kinematics/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target ros_api_tutorial
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/motion_planning_api/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  motion_planning_api_tutorial because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/motion_planning_pipeline/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  motion_planning_pipeline_tutorial because files in some directories may
+  conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/move_group_interface/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  move_group_interface_tutorial because files in some directories may
+  conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/perception_pipeline/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  detect_and_add_cylinder_collision_object_demo because files in some
+  directories may conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/perception_pipeline/CMakeLists.txt:4 (add_executable):
+  Cannot generate a safe runtime search path for target
+  bag_publisher_maintain_time because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/pick_place/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target pick_place_tutorial
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/planning_scene/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  planning_scene_tutorial because files in some directories may conflict with
+  libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/planning_scene_ros_api/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  planning_scene_ros_api_tutorial because files in some directories may
+  conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/robot_model_and_robot_state/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  robot_model_and_robot_state_tutorial because files in some directories may
+  conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/state_display/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  state_display_tutorial because files in some directories may conflict with
+  libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/subframes/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target subframes_tutorial
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at /opt/ros/noetic/share/catkin/cmake/test/gtest.cmake:180 (add_executable):
+  Cannot generate a safe runtime search path for target tests_tutorial
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/catkin/cmake/test/gtest.cmake:89 (_catkin_add_executable_with_google_test)
+  /opt/ros/noetic/share/catkin/cmake/test/gtest.cmake:37 (_catkin_add_google_test)
+  doc/tests/CMakeLists.txt:2 (catkin_add_gtest)
+
+[0m
+[33mCMake Warning at doc/trajopt_planner/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target trajopt_example
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/creating_moveit_plugins/lerp_motion_planner/CMakeLists.txt:8 (add_executable):
+  Cannot generate a safe runtime search path for target lerp_example because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/creating_moveit_plugins/lerp_motion_planner/CMakeLists.txt:15 (add_library):
+  Cannot generate a safe runtime search path for target
+  moveit_lerp_planner_plugin because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/moveit_cpp/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target moveit_cpp_tutorial
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/visualizing_collisions/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  visualizing_collisions_tutorial because files in some directories may
+  conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at doc/bullet_collision_checker/CMakeLists.txt:1 (add_executable):
+  Cannot generate a safe runtime search path for target
+  bullet_collision_checker_tutorial because files in some directories may
+  conflict with libraries in implicit directories:
+
+    runtime library [libpcl_kdtree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_search.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_features.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_sample_consensus.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_filters.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_ml.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_segmentation.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_surface.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_common.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_octree.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+    runtime library [libpcl_io.so.1.10] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+      /usr/local/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[36m--[0m Generating done (1.9s)
+[36m--[0m Build files have been written to: /home/orangepi/catkin_ws/build/moveit_tutorials

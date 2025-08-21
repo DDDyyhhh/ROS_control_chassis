@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/rviz_plugins/lib/pkgconfig/rviz_plugins.pc

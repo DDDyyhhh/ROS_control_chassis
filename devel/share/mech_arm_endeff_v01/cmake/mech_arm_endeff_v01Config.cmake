@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/mech_arm_endeff_v01/share/mech_arm_endeff_v01/cmake/mech_arm_endeff_v01Config.cmake

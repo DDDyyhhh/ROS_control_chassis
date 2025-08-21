@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/so3_control/lib/pkgconfig/so3_control.pc

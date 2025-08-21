@@ -1,0 +1,5 @@
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_xbee/lib/python3/dist-packages/xbee/__init__.py, /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/xbee/__init__.py)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_xbee/lib/python3/dist-packages/rosserial_xbee/__init__.py, /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/rosserial_xbee/__init__.py)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_xbee/lib/pkgconfig/rosserial_xbee.pc, /home/orangepi/catkin_ws/devel/lib/pkgconfig/rosserial_xbee.pc)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_xbee/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake, /home/orangepi/catkin_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig-version.cmake)
+Linked: (/home/orangepi/catkin_ws/devel/.private/rosserial_xbee/share/rosserial_xbee/cmake/rosserial_xbeeConfig.cmake, /home/orangepi/catkin_ws/devel/share/rosserial_xbee/cmake/rosserial_xbeeConfig.cmake)

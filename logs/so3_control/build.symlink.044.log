@@ -1,0 +1,5 @@
+Linked: (/home/orangepi/catkin_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so, /home/orangepi/catkin_ws/devel/lib/libso3_control_nodelet.so)
+Symlinking /home/orangepi/catkin_ws/devel/lib/libSO3Control.so
+Linked: (/home/orangepi/catkin_ws/devel/.private/so3_control/lib/pkgconfig/so3_control.pc, /home/orangepi/catkin_ws/devel/lib/pkgconfig/so3_control.pc)
+Linked: (/home/orangepi/catkin_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig-version.cmake, /home/orangepi/catkin_ws/devel/share/so3_control/cmake/so3_controlConfig-version.cmake)
+Linked: (/home/orangepi/catkin_ws/devel/.private/so3_control/share/so3_control/cmake/so3_controlConfig.cmake, /home/orangepi/catkin_ws/devel/share/so3_control/cmake/so3_controlConfig.cmake)

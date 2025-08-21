@@ -1,0 +1,8 @@
+lsx10/lslidar_driver
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/lib/liblslidar_input.so /home/orangepi/catkin_ws/devel/lib/liblslidar_input.so
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/lib/liblslidar_driver.so /home/orangepi/catkin_ws/devel/lib/liblslidar_driver.so
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/lib/liblslidar_serial.so /home/orangepi/catkin_ws/devel/lib/liblslidar_serial.so
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/lib/pkgconfig/lslidar_driver.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/lslidar_driver.pc
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/lib/lslidar_driver/lslidar_driver_node /home/orangepi/catkin_ws/devel/lib/lslidar_driver/lslidar_driver_node
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake /home/orangepi/catkin_ws/devel/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake
+/home/orangepi/catkin_ws/devel/.private/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake /home/orangepi/catkin_ws/devel/share/lslidar_driver/cmake/lslidar_driverConfig.cmake

@@ -1,0 +1,16 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/moveit_ros_benchmarks.dir/src/BenchmarkExecutor.cpp.o[0m
+In file included from [01m[K/usr/include/boost/config/header_deprecated.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/progress.hpp:22[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/moveit/moveit_ros/benchmarks/src/BenchmarkExecutor.cpp:50[m[K:
+[01m[K/usr/include/boost/progress.hpp:23:1:[m[K [01;36m[Knote: [m[K#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.
+   23 | [01;36m[KBOOST_HEADER_DEPRECATED[m[K( "the facilities in <boost/timer/timer.hpp>" )
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/timer.hpp:21:1:[m[K [01;36m[Knote: [m[K#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.
+   21 | [01;36m[KBOOST_HEADER_DEPRECATED[m[K( "the facilities in <boost/timer/timer.hpp>" )
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 28%] [1m[32mLinking CXX shared library /home/orangepi/catkin_ws/devel/.private/moveit_ros_benchmarks/lib/libmoveit_ros_benchmarks.so[0m
+[ 42%] [0mBuilt target moveit_ros_benchmarks[0m
+[ 57%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/moveit_ros_benchmarks/lib/moveit_ros_benchmarks/moveit_combine_predefined_poses_benchmark[0m
+[ 71%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/moveit_ros_benchmarks/lib/moveit_ros_benchmarks/moveit_run_benchmark[0m
+[100%] [0mBuilt target moveit_combine_predefined_poses_benchmark[0m
+[100%] [0mBuilt target moveit_run_benchmark[0m

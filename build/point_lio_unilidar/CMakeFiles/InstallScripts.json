@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/point_lio_unilidar/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/point_lio_unilidar/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/point_lio_unilidar/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/point_lio_unilidar/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

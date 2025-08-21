@@ -1,0 +1,3 @@
+make[2]: *** 没有规则可制作目标“/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/so3_disturbance_generator/cfg/Params.cfg”，由“/home/orangepi/catkin_ws/devel/.private/so3_disturbance_generator/include/so3_disturbance_generator/ParamsConfig.h” 需求。 停止。
+make[1]: *** [CMakeFiles/Makefile2:2331：CMakeFiles/so3_disturbance_generator_gencfg.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

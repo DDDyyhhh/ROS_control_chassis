@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/geometric_shapes/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/geometric_shapes/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/geometric_shapes/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/geometric_shapes/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/geometric_shapes/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

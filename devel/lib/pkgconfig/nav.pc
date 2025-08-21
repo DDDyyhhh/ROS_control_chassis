@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: nav
-Description: Description of nav
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/nav/lib/pkgconfig/nav.pc

@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/plan_manage/lib/python3/dist-packages/plan_manage/msg/__init__.py

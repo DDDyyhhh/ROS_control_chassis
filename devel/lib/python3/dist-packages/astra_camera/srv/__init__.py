@@ -1,9 +1,1 @@
-from ._GetBool import *
-from ._GetCameraInfo import *
-from ._GetCameraParams import *
-from ._GetDeviceInfo import *
-from ._GetDouble import *
-from ._GetInt32 import *
-from ._GetString import *
-from ._SetInt32 import *
-from ._SetString import *
+/home/orangepi/catkin_ws/devel/.private/astra_camera/lib/python3/dist-packages/astra_camera/srv/__init__.py

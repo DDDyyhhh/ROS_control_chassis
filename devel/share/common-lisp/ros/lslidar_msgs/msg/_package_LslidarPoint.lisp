@@ -1,16 +1,1 @@
-(cl:in-package lslidar_msgs-msg)
-(cl:export '(TIME-VAL
-          TIME
-          X-VAL
-          X
-          Y-VAL
-          Y
-          Z-VAL
-          Z
-          AZIMUTH-VAL
-          AZIMUTH
-          DISTANCE-VAL
-          DISTANCE
-          INTENSITY-VAL
-          INTENSITY
-))
+/home/orangepi/catkin_ws/devel/.private/lslidar_msgs/share/common-lisp/ros/lslidar_msgs/msg/_package_LslidarPoint.lisp

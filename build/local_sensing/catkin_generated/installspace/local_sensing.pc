@@ -1,0 +1,8 @@
+prefix=/home/orangepi/catkin_ws/install
+
+Name: local_sensing
+Description: Description of local_sensing
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp pcl_ros

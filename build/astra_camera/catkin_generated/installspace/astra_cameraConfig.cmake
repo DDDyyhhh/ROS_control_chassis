@@ -68,7 +68,7 @@ set(astra_camera_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(astra_camera_SOURCE_PREFIX /home/orangepi/catkin_ws/src/astra_camera)
-  set(astra_camera_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(astra_camera_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/astra_camera)
   set(astra_camera_INSTALL_PREFIX "")
   set(astra_camera_PREFIX ${astra_camera_DEVEL_PREFIX})
 else()
