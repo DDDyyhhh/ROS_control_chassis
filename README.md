@@ -70,16 +70,16 @@ The entire system has been meticulously configured and debugged to ensure smooth
     # Unitree L2 LiDAR Driver
     git clone https://github.com/unitreerobotics/unitree_lidar_ros.git
     
-    # Point-LIO SLAM Module (replace with your repository URL)
-    git clone [URL_to_your_point_lio_unilidar_repo]
+    # Point-LIO SLAM Module 
+    git clone [[URL_to_your_point_lio_unilidar_repo]](https://github.com/unitreerobotics/point_lio_unilidar.git)
     
     # Fast-Planner Navigation Module
     git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
     
-    # Robot Description (replace with your repository URL)
+    # Robot Description 
     git clone [URL_to_your_mycar_description_repo]
     
-    # Project Config & Launch files (replace with your repository URL)
+    # Project Config & Launch files 
     git clone [URL_to_your_car_test_repo]
     
     # Other dependencies...
@@ -232,16 +232,16 @@ Before running the system, ensure the following configuration files match your h
     # 宇树L2雷达驱动
     git clone https://github.com/unitreerobotics/unitree_lidar_ros.git
     
-    # Point-LIO SLAM 模块 (请替换为你的仓库地址)
-    git clone [你的point_lio_unilidar仓库地址]
+    # Point-LIO SLAM 模块 
+    git clone [[你的point_lio_unilidar仓库地址]](https://github.com/unitreerobotics/point_lio_unilidar.git)
     
     # Fast-Planner 导航模块
     git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
     
-    # 机器人描述文件 (请替换为你的仓库地址)
+    # 机器人描述文件 
     git clone [你的mycar_description仓库地址]
     
-    # 项目配置文件和Launch文件 (请替换为你的仓库地址)
+    # 项目配置文件和Launch文件 
     git clone [你的car_test仓库地址]
     
     # 其他依赖...
