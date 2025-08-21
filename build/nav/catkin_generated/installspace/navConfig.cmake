@@ -68,7 +68,7 @@ set(nav_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(nav_SOURCE_PREFIX /home/orangepi/catkin_ws/src/nav)
-  set(nav_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(nav_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/nav)
   set(nav_INSTALL_PREFIX "")
   set(nav_PREFIX ${nav_DEVEL_PREFIX})
 else()

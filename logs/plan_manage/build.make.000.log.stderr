@@ -1,0 +1,8 @@
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/fast_planner_node.cpp:29[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/kino_replan_fsm.h:43:10:[m[K [01;31m[Kfatal error: [m[Kplan_manage/Bspline.h: 没有那个文件或目录
+   43 | #include [01;31m[K<plan_manage/Bspline.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:79：CMakeFiles/fast_planner_node.dir/src/fast_planner_node.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:1734：CMakeFiles/fast_planner_node.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

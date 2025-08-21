@@ -33,8 +33,7 @@
     <param name="clamping_thres_min" value="0.12" /> <!-- 置信度下限 -->
     <param name="clamping_thres_max" value="0.97" /> <!-- 置信度上限 -->
     <param name="occupancy_thres" value="0.7" /> <!-- 【可调】高于此值为障碍物。可以适当降低一点点，比如0.65 -->
-
-
+    
   </node>
 </launch>
 

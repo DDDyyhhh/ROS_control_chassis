@@ -1,0 +1,7 @@
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/odom_visualization/src/odom_visualization.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kpose_utils.h: 没有那个文件或目录
+   12 | #include [01;31m[K"pose_utils.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/odom_visualization.dir/build.make:79：CMakeFiles/odom_visualization.dir/src/odom_visualization.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:2130：CMakeFiles/odom_visualization.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

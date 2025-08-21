@@ -1,0 +1,11 @@
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/edt_environment.cpp:[m[K In member function ‘[01m[Kdouble fast_planner::EDTEnvironment::minDistToAllBox(const Vector3d&, const double&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/edt_environment.cpp:71:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<fast_planner::PolynomialPrediction>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   71 |   for (int i = 0; [01;35m[Ki < obj_prediction_->size()[m[K; i++) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/sdf_map.cpp:[m[K In member function ‘[01m[Kint SDFMap::getReceivedCloudSize()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/sdf_map.cpp:1217:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_undistort_[m[K’ was not declared in this scope
+ 1217 |   return [01;31m[Kcloud_undistort_[m[K->points.size();
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/plan_env.dir/build.make:79：CMakeFiles/plan_env.dir/src/sdf_map.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:1308：CMakeFiles/plan_env.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

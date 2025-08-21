@@ -68,7 +68,7 @@ set(car_test_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(car_test_SOURCE_PREFIX /home/orangepi/catkin_ws/src/car_test)
-  set(car_test_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(car_test_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/car_test)
   set(car_test_INSTALL_PREFIX "")
   set(car_test_PREFIX ${car_test_DEVEL_PREFIX})
 else()

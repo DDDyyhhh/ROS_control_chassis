@@ -1,0 +1,4 @@
+[ 50%] [0mBuilt target pointlio_mapping[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/pointlio_mapping_STM32.dir/src/laserMapping_STM32.cpp.o[0m
+[ 66%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/point_lio_unilidar/lib/point_lio_unilidar/pointlio_mapping_STM32[0m
+[100%] [0mBuilt target pointlio_mapping_STM32[0m

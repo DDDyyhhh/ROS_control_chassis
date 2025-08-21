@@ -1,0 +1,27 @@
+{
+	"BUILD_DIR" : "/home/orangepi/catkin_ws/build/moveit_ros_visualization/motion_planning_rviz_plugin/moveit_motion_planning_rviz_plugin_core_autogen",
+	"CMAKE_BINARY_DIR" : "/home/orangepi/catkin_ws/build/moveit_ros_visualization",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/orangepi/catkin_ws/build/moveit_ros_visualization/motion_planning_rviz_plugin",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/orangepi/catkin_ws/src/moveit/moveit_ros/visualization/motion_planning_rviz_plugin",
+	"CMAKE_SOURCE_DIR" : "/home/orangepi/catkin_ws/src/moveit/moveit_ros/visualization",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/orangepi/catkin_ws/build/moveit_ros_visualization/motion_planning_rviz_plugin/moveit_motion_planning_rviz_plugin_core_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/orangepi/catkin_ws/src/moveit/moveit_ros/visualization/motion_planning_rviz_plugin/src/icons/list-add.png",
+		"/home/orangepi/catkin_ws/src/moveit/moveit_ros/visualization/motion_planning_rviz_plugin/src/icons/edit-clear.png",
+		"/home/orangepi/catkin_ws/src/moveit/moveit_ros/visualization/motion_planning_rviz_plugin/src/icons/list-remove.png"
+	],
+	"LOCK_FILE" : "/home/orangepi/catkin_ws/build/moveit_ros_visualization/motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core_autogen.dir/AutoRcc_icons_2OST2OT5Q2_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icons" ],
+	"OUTPUT_CHECKSUM" : "2OST2OT5Q2",
+	"OUTPUT_NAME" : "qrc_icons.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/orangepi/catkin_ws/build/moveit_ros_visualization/motion_planning_rviz_plugin/CMakeFiles/moveit_motion_planning_rviz_plugin_core_autogen.dir/AutoRcc_icons_2OST2OT5Q2_Used.txt",
+	"SOURCE" : "/home/orangepi/catkin_ws/src/moveit/moveit_ros/visualization/motion_planning_rviz_plugin/src/icons/icons.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

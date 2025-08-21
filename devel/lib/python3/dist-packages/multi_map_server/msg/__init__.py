@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/multi_map_server/lib/python3/dist-packages/multi_map_server/msg/__init__.py

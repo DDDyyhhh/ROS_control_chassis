@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/local_sensing/lib/pkgconfig/local_sensing.pc

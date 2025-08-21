@@ -1,0 +1,104 @@
+<launch>
+
+    <!-- ==================== 1. 启动底层与通信 ==================== -->
+    <!-- 启动与 STM32 的通信 (纯粹的执行器) -->
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
+        <param name="port" value="/dev/ttyUSB0"/>
+        <param name="baud" value="115200"/>
+        <param name="buffer_size" value="1024"/>
+    </node>
+
+
+    <!-- Gemini Pro 深度相机 -->
+    <!-- <include file="$(find astra_camera)/launch/gemini.launch"/> -->
+
+    <!-- 加载机器人 URDF 模型并启动 robot_state_publisher -->
+
+    
+    <!-- 它发布 base_link -> wheels 等关节变换 -->
+    <include file="$(find mycar_description)/launch/car.launch" />
+
+    <!-- ==================== 2. 启动传感器 ==================== -->
+    <!-- 启动宇树 L2 雷达驱动，它会发布 /unilidar/cloud 和 /unilidar/imu -->
+    <include file="$(find unitree_lidar_ros)/launch/run_without_rviz.launch"/>
+
+    <node pkg="car_test" type="odom_to_tf.py" name="odom_to_tf_node" />
+  
+
+    <!-- 【【【新增】】】将3D点云转换为amcl需要的2D LaserScan -->
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan">
+        <remap from="cloud_in" to="/unilidar/cloud"/>
+        <remap from="scan" to="/scan"/>
+        <rosparam>
+            target_frame: unilidar_lidar
+            transform_tolerance: 0.01
+            min_height: 0.05
+            max_height: 0.8
+            angle_min: -3.1415 # -180 degrees
+            angle_max: 3.1415 # 180 degrees
+            angle_increment: 0.0087 # M_PI/360.0
+            scan_time: 0.1
+            range_min: 0.2
+            range_max: 10.0
+            use_inf: true
+            inf_epsilon: 1.0
+        </rosparam>
+    </node>
+
+    <!-- ==================== 3. 加载地图与定位 ==================== -->
+    <!-- 加载我们创建的地图 -->
+    <arg name="map_file" default="$(find car_test)/maps/my_final_map.yaml" />
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+    <!-- 启动 AMCL 定位节点 -->
+     <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <!-- Publish scans from best pose at a max of 10 Hz -->
+    <param name="odom_model_type" value="diff"/><!-- 里程计模式为差分 -->
+    <param name="odom_alpha5" value="0.1"/>
+    <param name="transform_tolerance" value="0.5" />
+    <param name="gui_publish_rate" value="10.0"/>
+    <!-- <param name="laser_max_beams" value="30"/> -->
+    <param name="min_particles" value="500"/>
+    <param name="max_particles" value="10000"/>
+    <param name="kld_err" value="0.05"/>
+    <param name="kld_z" value="0.99"/>
+    <param name="odom_alpha1" value="0.8"/>
+    <param name="odom_alpha2" value="0.5"/>
+    <!-- translation std dev, m -->
+    <param name="odom_alpha3" value="0.2"/>
+    <param name="odom_alpha4" value="0.3"/>
+    <param name="laser_z_hit" value="0.95"/>
+    <param name="laser_z_short" value="0.05"/>
+    <param name="laser_z_max" value="0.05"/>
+    <param name="laser_z_rand" value="0.05"/>
+    <param name="laser_sigma_hit" value="0.2"/>
+    <param name="laser_lambda_short" value="0.1"/>
+    <param name="laser_lambda_short" value="0.1"/>
+    <param name="laser_model_type" value="likelihood_field"/>
+    <!-- <param name="laser_model_type" value="beam"/> -->
+    <param name="laser_likelihood_max_dist" value="2.0"/>
+    <param name="update_min_d" value="0.1"/>
+    <param name="update_min_a" value="0.1"/>
+    <param name="odom_frame_id" value="odom"/><!-- 里程计坐标系 -->
+    <param name="base_frame_id" value="base_link"/><!-- 添加机器人基坐标系 -->
+    <param name="global_frame_id" value="map"/><!-- 添加地图坐标系 -->
+  </node>
+
+
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    
+
+    <!-- *** 核心修改：切换回 TrajectoryPlannerROS *** -->
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS" />
+    
+    <!-- 加载所有参数文件 -->
+    <rosparam file="$(find nav)/param/costmap_common_params_2025723.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find nav)/param/costmap_common_params_2025723.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find nav)/param/local_costmap_params_2025723.yaml" command="load" />
+    <rosparam file="$(find nav)/param/global_costmap_params_2025723.yaml" command="load" />
+    <!-- 注意：下面这个文件现在需要包含 TrajectoryPlannerROS 的参数 -->
+    <rosparam file="$(find nav)/param/base_local_planner_params.yaml" command="load" />
+    </node>
+
+</launch>

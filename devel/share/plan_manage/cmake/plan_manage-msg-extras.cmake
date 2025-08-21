@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/plan_manage/share/plan_manage/cmake/plan_manage-msg-extras.cmake

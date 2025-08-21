@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/plan_env/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/plan_env/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/plan_env/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/plan_env/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

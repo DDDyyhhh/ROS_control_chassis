@@ -1,0 +1,4 @@
+urdf02_gazebo
+/home/orangepi/catkin_ws/devel/.private/urdf02_gazebo/lib/pkgconfig/urdf02_gazebo.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/urdf02_gazebo.pc
+/home/orangepi/catkin_ws/devel/.private/urdf02_gazebo/share/urdf02_gazebo/cmake/urdf02_gazeboConfig-version.cmake /home/orangepi/catkin_ws/devel/share/urdf02_gazebo/cmake/urdf02_gazeboConfig-version.cmake
+/home/orangepi/catkin_ws/devel/.private/urdf02_gazebo/share/urdf02_gazebo/cmake/urdf02_gazeboConfig.cmake /home/orangepi/catkin_ws/devel/share/urdf02_gazebo/cmake/urdf02_gazeboConfig.cmake

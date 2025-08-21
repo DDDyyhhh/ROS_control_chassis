@@ -1,3 +1,1 @@
-from ._DeviceInfo import *
-from ._Extrinsics import *
-from ._Metadata import *
+/home/orangepi/catkin_ws/devel/.private/astra_camera/lib/python3/dist-packages/astra_camera/msg/__init__.py

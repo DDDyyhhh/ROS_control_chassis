@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/pointcloud_fuser/share/pointcloud_fuser/cmake/pointcloud_fuserConfig-version.cmake

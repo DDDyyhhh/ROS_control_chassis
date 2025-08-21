@@ -1,0 +1,4 @@
+mycar_description
+/home/orangepi/catkin_ws/devel/.private/mycar_description/lib/pkgconfig/mycar_description.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/mycar_description.pc
+/home/orangepi/catkin_ws/devel/.private/mycar_description/share/mycar_description/cmake/mycar_descriptionConfig-version.cmake /home/orangepi/catkin_ws/devel/share/mycar_description/cmake/mycar_descriptionConfig-version.cmake
+/home/orangepi/catkin_ws/devel/.private/mycar_description/share/mycar_description/cmake/mycar_descriptionConfig.cmake /home/orangepi/catkin_ws/devel/share/mycar_description/cmake/mycar_descriptionConfig.cmake

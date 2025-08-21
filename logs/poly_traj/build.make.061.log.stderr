@@ -1,0 +1,48 @@
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:33[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:128:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarmtal_msgs[m[K’ was not declared in this scope
+  128 |       node.advertise<[01;31m[Kswarmtal_msgs[m[K::drone_onboard_command>("/drone_commander/onboard_command", 10);
+      |                      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:128:12:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  128 |       node.[01;31m[Kadvertise<swarmtal_msgs::drone_onboard_command>[m[K("/drone_commander/onboard_command", 10);
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:128:98:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<<expression error> >(const char [33], int)[m[K’
+  128 |       node.advertise<swarmtal_msgs::drone_onboard_command>("/drone_commander/onboard_command", 10[01;31m[K)[m[K;
+      |                                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:30[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+  249 |     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:128:98:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  128 |       node.advertise<swarmtal_msgs::drone_onboard_command>("/drone_commander/onboard_command", 10[01;31m[K)[m[K;
+      |                                                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:30[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+  315 |   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:128:98:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  128 |       node.advertise<swarmtal_msgs::drone_onboard_command>("/drone_commander/onboard_command", 10[01;31m[K)[m[K;
+      |                                                                                                  [01;31m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:168:26:[m[K [01;31m[Kerror: [m[K‘[01m[KgenerateTraj[m[K’ was not declared in this scope
+  168 |   Eigen::MatrixXd poly = [01;31m[KgenerateTraj[m[K(pos, time);
+      |                          [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:199:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarmtal_msgs[m[K’ is not a class, namespace, or enumeration
+  199 |   [01;31m[Kswarmtal_msgs[m[K::drone_onboard_command cmd;
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:200:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd[m[K’ was not declared in this scope
+  200 |   [01;31m[Kcmd[m[K.command_type = swarmtal_msgs::drone_onboard_command::CTRL_POS_COMMAND;
+      |   [01;31m[K^~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:200:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kswarmtal_msgs[m[K’ is not a class, namespace, or enumeration
+  200 |   cmd.command_type = [01;31m[Kswarmtal_msgs[m[K::drone_onboard_command::CTRL_POS_COMMAND;
+      |                      [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/poly_traj.dir/build.make:93：CMakeFiles/poly_traj.dir/src/traj_generator.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:810：CMakeFiles/poly_traj.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

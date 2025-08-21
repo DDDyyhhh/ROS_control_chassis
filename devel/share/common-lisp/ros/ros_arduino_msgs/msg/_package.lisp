@@ -1,15 +1,1 @@
-(cl:defpackage ros_arduino_msgs-msg
-  (:use )
-  (:export
-   "<ANALOG>"
-   "ANALOG"
-   "<ANALOGFLOAT>"
-   "ANALOGFLOAT"
-   "<ARDUINOCONSTANTS>"
-   "ARDUINOCONSTANTS"
-   "<DIGITAL>"
-   "DIGITAL"
-   "<SENSORSTATE>"
-   "SENSORSTATE"
-  ))
-
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs/share/common-lisp/ros/ros_arduino_msgs/msg/_package.lisp

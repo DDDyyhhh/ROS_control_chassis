@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/vision_opencv/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/vision_opencv/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/vision_opencv/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/vision_opencv/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

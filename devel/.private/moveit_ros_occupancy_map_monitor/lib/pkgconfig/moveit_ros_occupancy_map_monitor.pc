@@ -1,0 +1,8 @@
+prefix=/home/orangepi/catkin_ws/devel/.private/moveit_ros_occupancy_map_monitor
+
+Name: moveit_ros_occupancy_map_monitor
+Description: Description of moveit_ros_occupancy_map_monitor
+Version: 1.1.16
+Cflags: -I/home/orangepi/catkin_ws/src/moveit/moveit_ros/occupancy_map_monitor/include -I/usr/include/eigen3 -I/home/orangepi/catkin_ws/devel/include
+Libs: -L${prefix}/lib -lmoveit_ros_occupancy_map_monitor /home/orangepi/catkin_ws/devel/lib/liboctomap.so /home/orangepi/catkin_ws/devel/lib/liboctomath.so
+Requires: moveit_core moveit_msgs geometric_shapes tf2_ros

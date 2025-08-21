@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/ros_arduino_bridge/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/ros_arduino_bridge/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/ros_arduino_bridge/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/ros_arduino_bridge/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

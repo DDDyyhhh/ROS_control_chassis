@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/rosserial_windows/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rosserial_windows/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rosserial_windows/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/rosserial_windows/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

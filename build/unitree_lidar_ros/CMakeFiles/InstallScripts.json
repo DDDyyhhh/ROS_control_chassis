@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/unitree_lidar_ros/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/unitree_lidar_ros/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/unitree_lidar_ros/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/unitree_lidar_ros/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

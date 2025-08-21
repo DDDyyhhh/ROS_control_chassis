@@ -1,15 +1,1 @@
-(cl:defpackage lslidar_msgs-msg
-  (:use )
-  (:export
-   "<LSLIDARDIFOP>"
-   "LSLIDARDIFOP"
-   "<LSLIDARPACKET>"
-   "LSLIDARPACKET"
-   "<LSLIDARPOINT>"
-   "LSLIDARPOINT"
-   "<LSLIDARSCAN>"
-   "LSLIDARSCAN"
-   "<LSLIDARSWEEP>"
-   "LSLIDARSWEEP"
-  ))
-
+/home/orangepi/catkin_ws/devel/.private/lslidar_msgs/share/common-lisp/ros/lslidar_msgs/msg/_package.lisp

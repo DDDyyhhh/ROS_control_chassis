@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/quadrotor_msgs/share/common-lisp/ros/quadrotor_msgs/msg/OutputData.lisp

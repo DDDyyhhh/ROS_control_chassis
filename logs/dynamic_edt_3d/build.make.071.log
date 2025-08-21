@@ -1,0 +1,5 @@
+[ 20%] [0mBuilt target dynamicedt3d-static[0m
+[ 40%] [0mBuilt target dynamicedt3d[0m
+[ 60%] [0mBuilt target exampleEDT3D[0m
+[ 80%] [0mBuilt target exampleEDTOctomap[0m
+[100%] [0mBuilt target exampleEDTOctomapStamped[0m

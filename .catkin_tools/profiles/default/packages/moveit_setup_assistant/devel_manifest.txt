@@ -1,0 +1,10 @@
+moveit/moveit_setup_assistant
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/libmoveit_setup_assistant_tools.so.1.1.16 /home/orangepi/catkin_ws/devel/lib/libmoveit_setup_assistant_tools.so.1.1.16
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/libmoveit_setup_assistant_tools.so /home/orangepi/catkin_ws/devel/lib/libmoveit_setup_assistant_tools.so
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/libmoveit_setup_assistant_widgets.so /home/orangepi/catkin_ws/devel/lib/libmoveit_setup_assistant_widgets.so
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/libmoveit_setup_assistant_widgets.so.1.1.16 /home/orangepi/catkin_ws/devel/lib/libmoveit_setup_assistant_widgets.so.1.1.16
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/pkgconfig/moveit_setup_assistant.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/moveit_setup_assistant.pc
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/moveit_setup_assistant/moveit_setup_assistant /home/orangepi/catkin_ws/devel/lib/moveit_setup_assistant/moveit_setup_assistant
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/lib/moveit_setup_assistant/collisions_updater /home/orangepi/catkin_ws/devel/lib/moveit_setup_assistant/collisions_updater
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/share/moveit_setup_assistant/cmake/moveit_setup_assistantConfig.cmake /home/orangepi/catkin_ws/devel/share/moveit_setup_assistant/cmake/moveit_setup_assistantConfig.cmake
+/home/orangepi/catkin_ws/devel/.private/moveit_setup_assistant/share/moveit_setup_assistant/cmake/moveit_setup_assistantConfig-version.cmake /home/orangepi/catkin_ws/devel/share/moveit_setup_assistant/cmake/moveit_setup_assistantConfig-version.cmake

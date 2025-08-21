@@ -6,10 +6,10 @@ TrajectoryPlannerROS:
   holonomic_robot: false
 
   # Velocity limits
-  max_vel_x: 0.18         # 最大前进速度
+  max_vel_x: 0.2         # 最大前进速度
   min_vel_x: 0.1          # 最小前进速度。注意：这个规划器通常不允许min_vel_x为负，后退是作为恢复行为的一部分
   
-  max_vel_theta: 1.0        # 最大旋转速度 (rad/s)
+  max_vel_theta: 1.5        # 最大旋转速度 (rad/s)
   min_in_place_vel_theta: 0.2 # 最小原地旋转速度，确保能克服静摩擦力
 
   # Acceleration limits

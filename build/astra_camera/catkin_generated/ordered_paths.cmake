@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/opt/ros/noetic/lib")
+set(ORDERED_PATHS "/home/orangepi/catkin_ws/devel/.private/cv_bridge/lib;/home/orangepi/catkin_ws/devel/.private/image_geometry/lib;/opt/ros/noetic/lib")

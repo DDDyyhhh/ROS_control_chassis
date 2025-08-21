@@ -1,0 +1,45 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/poly_traj.dir/src/polynomial_traj.cpp.o[0m
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:27[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kvoid PolynomialTraj::init()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:66:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   66 |     for (int i = 0; [01;35m[Ki < times.size()[m[K; ++i) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getLength()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:168:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 3, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  168 |     for (int i = 1; [01;35m[Ki < traj_vec3d.size()[m[K; ++i) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:177:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmean_vel[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  177 |     double [01;35m[Kmean_vel[m[K = length / time_sum;
+      |            [01;35m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getAccCost()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:184:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  184 |     for (int s = 0; [01;35m[Ks < times.size()[m[K; ++s) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getJerk()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:197:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  197 |     for (int s = 0; [01;35m[Ks < times.size()[m[K; ++s) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kvoid PolynomialTraj::getMeanAndMaxVel(double&, double&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:226:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  226 |     for (int s = 0; [01;35m[Ks < times.size()[m[K; ++s) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kvoid PolynomialTraj::getMeanAndMaxAcc(double&, double&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/include/poly_traj/polynomial_traj.h:260:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  260 |     for (int s = 0; [01;35m[Ks < times.size()[m[K; ++s) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:[m[K In function ‘[01m[KPolynomialTraj fastLine4deg(Eigen::Vector3d, Eigen::Vector3d, double, double, double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:201:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klen[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  201 |   double [01;35m[Klen[m[K = disp.norm();
+      |          [01;35m[K^~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:202:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kdir[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  202 |   Eigen::Vector3d [01;35m[Kdir[m[K = disp.normalized();
+      |                   [01;35m[K^~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:205:7:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmax_id[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  205 |   int [01;35m[Kmax_id[m[K = -1;
+      |       [01;35m[K^~~~~~[m[K
+[100%] [1m[32mLinking CXX shared library /home/orangepi/catkin_ws/devel/.private/poly_traj/lib/libpoly_traj.so[0m
+[100%] [0mBuilt target poly_traj[0m

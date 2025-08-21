@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: mycar_description
-Description: Description of mycar_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/mycar_description/lib/pkgconfig/mycar_description.pc

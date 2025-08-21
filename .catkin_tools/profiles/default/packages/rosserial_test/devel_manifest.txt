@@ -1,0 +1,4 @@
+rosserial/rosserial_test
+/home/orangepi/catkin_ws/devel/.private/rosserial_test/lib/pkgconfig/rosserial_test.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/rosserial_test.pc
+/home/orangepi/catkin_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig.cmake /home/orangepi/catkin_ws/devel/share/rosserial_test/cmake/rosserial_testConfig.cmake
+/home/orangepi/catkin_ws/devel/.private/rosserial_test/share/rosserial_test/cmake/rosserial_testConfig-version.cmake /home/orangepi/catkin_ws/devel/share/rosserial_test/cmake/rosserial_testConfig-version.cmake

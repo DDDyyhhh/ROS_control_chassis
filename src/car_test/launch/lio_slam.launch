@@ -69,11 +69,14 @@
 		<param name="runtime_pos_log_enable" type="bool" value="0" /> 
 	</node>
 
+  <!-- 【【【新增】】】 启动我们的点云融合节点 -->
+  <!-- <node name="pointcloud_fuser" pkg="pointcloud_fuser" type="fuser_node.py" output="screen"  required="true" /> -->
+
 
   <!-- ==================== 3. 地图转换器 (核心桥梁) ==================== -->
     <!-- 启动 octomap_server，将 3D 点云实时转换为 2D 栅格地图 -->
     <include file="$(find car_test)/launch/octomap_server.launch" />
-
+      
   <!-- ==================== 4. 导航核心 ==================== -->
     <!-- 启动 move_base，它现在可以订阅由 octomap_server 发布的 /map 话题了 -->
     <include file="$(find nav)/launch/move_base.launch"/>

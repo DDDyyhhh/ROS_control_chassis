@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_ros_robot_interaction/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_robot_interaction/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_robot_interaction/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_ros_robot_interaction/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

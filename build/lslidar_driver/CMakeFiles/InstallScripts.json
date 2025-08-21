@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/lslidar_driver/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/lslidar_driver/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/lslidar_driver/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/lslidar_driver/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

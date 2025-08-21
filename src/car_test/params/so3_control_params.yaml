@@ -1,0 +1,27 @@
+# so3_control_params.yaml
+# 将控制器约束为地面2D模式的参数
+
+# 控制器的主循环频率 (Hz)
+att_rate: 100
+# 主轴和副轴的控制增益 (PID参数)
+hover_gain: [1.5, 1.5, 0.0] # 【关键】将Z轴的P增益设为0，让它不关心高度
+angle_gain: [0.05, 0.05, 0.2] # 【关键】Z轴旋转(yaw)的P增益
+rate_gain: [0.005, 0.005, 0.02] # 角速度的P增益
+
+# 机器人的物理限制
+max_fb_acc: 5.0 # 最大前后加速度
+max_lr_acc: 5.0 # 最大左右加速度
+max_ud_acc: 0.0 # 【关键】最大上下加速度设为0
+max_angular_vel: 1.5 # 最大角速度
+max_hover_vel: 0.5 # 【关键】你的机器人最大线速度
+
+# 【【【最重要的一项！】】】
+use_body_rate: false # false代表输出 /cmd_vel (线速度+角速度)，true代表输出给无人机的角速度指令
+
+# 其他参数可以暂时保持默认
+mass: 1.0
+gravity: 9.81
+d_rate: [0.1, 0.1, 0.05]
+i_rate: [0.01, 0.01, 0.005]
+i_hover: [0.05, 0.05, 0.0]
+hov_thr_kf: 0.5

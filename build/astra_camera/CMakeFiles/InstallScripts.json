@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/astra_camera/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/astra_camera/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/astra_camera/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/astra_camera/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/octovis/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

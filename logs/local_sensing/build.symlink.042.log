@@ -1,0 +1,4 @@
+Linked: (/home/orangepi/catkin_ws/devel/.private/local_sensing/lib/local_sensing/local_sensing_node, /home/orangepi/catkin_ws/devel/lib/local_sensing/local_sensing_node)
+Linked: (/home/orangepi/catkin_ws/devel/.private/local_sensing/lib/pkgconfig/local_sensing.pc, /home/orangepi/catkin_ws/devel/lib/pkgconfig/local_sensing.pc)
+Linked: (/home/orangepi/catkin_ws/devel/.private/local_sensing/share/local_sensing/cmake/local_sensingConfig.cmake, /home/orangepi/catkin_ws/devel/share/local_sensing/cmake/local_sensingConfig.cmake)
+Linked: (/home/orangepi/catkin_ws/devel/.private/local_sensing/share/local_sensing/cmake/local_sensingConfig-version.cmake, /home/orangepi/catkin_ws/devel/share/local_sensing/cmake/local_sensingConfig-version.cmake)

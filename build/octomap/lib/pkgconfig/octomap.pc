@@ -1,0 +1,10 @@
+prefix=/home/orangepi/catkin_ws/devel
+libdir=/home/orangepi/catkin_ws/devel/lib
+includedir=/home/orangepi/catkin_ws/devel/include
+
+Name: octomap
+Description: octomap
+Requires: 
+Version: 1.9.8
+Libs: -L${libdir}  -loctomap -loctomath
+Cflags: -I${includedir} 

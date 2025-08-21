@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/so3_control/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/so3_control/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/so3_control/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/so3_control/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

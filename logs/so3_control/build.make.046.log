@@ -1,0 +1,6 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/SO3Control.dir/src/SO3Control.cpp.o[0m
+[ 50%] [1m[32mLinking CXX shared library /home/orangepi/catkin_ws/devel/.private/so3_control/lib/libSO3Control.so[0m
+[ 50%] [0mBuilt target SO3Control[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/so3_control_nodelet.dir/src/so3_control_nodelet.cpp.o[0m
+[100%] [1m[32mLinking CXX shared library /home/orangepi/catkin_ws/devel/.private/so3_control/lib/libso3_control_nodelet.so[0m
+[100%] [0mBuilt target so3_control_nodelet[0m

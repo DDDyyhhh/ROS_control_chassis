@@ -67,8 +67,8 @@ set(rosserial_python_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rosserial_python_SOURCE_PREFIX /home/orangepi/catkin_ws/src/rosserial_python)
-  set(rosserial_python_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(rosserial_python_SOURCE_PREFIX /home/orangepi/catkin_ws/src/rosserial/rosserial_python)
+  set(rosserial_python_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/rosserial_python)
   set(rosserial_python_INSTALL_PREFIX "")
   set(rosserial_python_PREFIX ${rosserial_python_DEVEL_PREFIX})
 else()

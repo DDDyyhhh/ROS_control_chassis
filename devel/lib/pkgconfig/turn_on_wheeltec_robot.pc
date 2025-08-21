@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: turn_on_wheeltec_robot
-Description: Description of turn_on_wheeltec_robot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/turn_on_wheeltec_robot/lib/pkgconfig/turn_on_wheeltec_robot.pc

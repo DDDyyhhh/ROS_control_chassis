@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/plan_manage/include/plan_manage/Bspline.h

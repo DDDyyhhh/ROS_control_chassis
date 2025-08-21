@@ -1,0 +1,26 @@
+Not searching for unused variables given on the command line.
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+[0m
+[0m
+[0m
+[36m--[0m dynamicEDT3D building as Release
+[36m--[0m Found octomap version: 1.9.8
+[36m--[0m octomap libraries: /home/orangepi/catkin_ws/devel/lib/liboctomap.so;/home/orangepi/catkin_ws/devel/lib/liboctomath.so
+[36m--[0m Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE)
+[0m
+[0m
+[36m--[0m Compile dynamicEDT3D using: make
+[36m--[0m Install dynamicEDT3D using: make install
+[36m--[0m     (be sure to set the correct CMAKE_INSTALL_PREFIX before)
+[36m--[0m Compile API-documentation using: make docs_dynamicEDT3D
+
+[36m--[0m Configuring done (0.1s)
+[36m--[0m Generating done (0.0s)
+[36m--[0m Build files have been written to: /home/orangepi/catkin_ws/build/dynamic_edt_3d

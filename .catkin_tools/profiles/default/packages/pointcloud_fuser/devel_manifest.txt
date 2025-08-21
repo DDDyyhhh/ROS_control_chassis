@@ -1,0 +1,4 @@
+pointcloud_fuser
+/home/orangepi/catkin_ws/devel/.private/pointcloud_fuser/lib/pkgconfig/pointcloud_fuser.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/pointcloud_fuser.pc
+/home/orangepi/catkin_ws/devel/.private/pointcloud_fuser/share/pointcloud_fuser/cmake/pointcloud_fuserConfig-version.cmake /home/orangepi/catkin_ws/devel/share/pointcloud_fuser/cmake/pointcloud_fuserConfig-version.cmake
+/home/orangepi/catkin_ws/devel/.private/pointcloud_fuser/share/pointcloud_fuser/cmake/pointcloud_fuserConfig.cmake /home/orangepi/catkin_ws/devel/share/pointcloud_fuser/cmake/pointcloud_fuserConfig.cmake

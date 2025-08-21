@@ -1,0 +1,24 @@
+[ 20%] [0mBuilt target dynamicedt3d[0m
+[ 40%] [0mBuilt target dynamicedt3d-static[0m
+[ 60%] [0mBuilt target exampleEDT3D[0m
+[ 80%] [0mBuilt target exampleEDTOctomap[0m
+[100%] [0mBuilt target exampleEDTOctomapStamped[0m
+[36mInstall the project...[0m
+-- Install configuration: "Release"
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/dynamicEDT3D/bucketedqueue.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/dynamicEDT3D/bucketedqueue.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/dynamicEDT3D/dynamicEDT3D.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/dynamicEDT3D/dynamicEDTOctomap.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/dynamicEDT3D/dynamicEDTOctomap.hxx
+-- Up-to-date: /home/orangepi/catkin_ws/devel/include/dynamicEDT3D/point.h
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/dynamic_edt_3d/package.xml
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/ament_index/resource_index/packages/dynamicEDT3D
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/dynamicEDT3D/dynamicEDT3DConfig.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/dynamicEDT3D/dynamicEDT3DConfig-version.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/pkgconfig/dynamicEDT3D.pc
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/libdynamicedt3d.so.1.9.8
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/libdynamicedt3d.so.1.9
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/libdynamicedt3d.so
+-- Up-to-date: /home/orangepi/catkin_ws/devel/lib/libdynamicedt3d.a
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/dynamicEDT3D/dynamicEDT3DTargets.cmake
+-- Up-to-date: /home/orangepi/catkin_ws/devel/share/dynamicEDT3D/dynamicEDT3DTargets-release.cmake

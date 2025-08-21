@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/plan_manage/share/roseus/ros/plan_manage/manifest.l

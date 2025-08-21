@@ -68,7 +68,7 @@ set(unitree_lidar_ros_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(unitree_lidar_ros_SOURCE_PREFIX /home/orangepi/catkin_ws/src/unitree_lidar_ros)
-  set(unitree_lidar_ros_DEVEL_PREFIX /home/orangepi/catkin_ws/devel)
+  set(unitree_lidar_ros_DEVEL_PREFIX /home/orangepi/catkin_ws/devel/.private/unitree_lidar_ros)
   set(unitree_lidar_ros_INSTALL_PREFIX "")
   set(unitree_lidar_ros_PREFIX ${unitree_lidar_ros_DEVEL_PREFIX})
 else()

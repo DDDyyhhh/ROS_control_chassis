@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/orangepi/catkin_ws/devel/.private/point_lio_unilidar/setup.sh

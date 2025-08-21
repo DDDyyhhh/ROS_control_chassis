@@ -1,0 +1,62 @@
+# fast_planner_node 的所有参数
+
+# ----------------- planner_node -----------------
+planner_node:
+  planner: 1
+
+# ----------------- fsm -----------------
+fsm:
+  flight_type: 1
+  goal_z: 0.3
+
+# ----------------- sdf_map -----------------
+sdf_map:
+  # 地图基本参数
+  resolution: 0.1
+  map_size_x: 20.0 # 增大一些，因为是全局地图输入
+  map_size_y: 20.0
+  map_size_z: 3.0
+  frame_id: "map"
+  local_update_range_x: 5.0 
+  local_update_range_y: 5.0
+  local_update_range_z: 3.0
+  obstacles_inflation: 0.2
+  ground_height: -0.1
+  
+  # 【【【关键】】】告诉它输入是带时间戳的位姿 (PoseStamped)
+  # 因为 local_sensing_node 发布的是 /pcl_render_node/camera_pose
+  pose_type: 0 
+  
+  # 模拟深度相机的参数 (必须提供)
+  # 这些值需要与 local_sensing_node 内部的渲染参数匹配
+  fx: 525.0
+  fy: 525.0
+  cx: 319.5
+  cy: 239.5
+  k_depth_scaling_factor: 1000.0 # Fast-Planner的SDFMap期望的深度单位是毫米(mm)
+  
+  # 可视化
+  esdf_slice_height: 0.3
+  show_esdf_time: true
+  
+# ----------------- manager, search, bspline -----------------
+manager:
+  max_vel: 0.2
+  max_acc: 0.5
+  use_kinodynamic_path: true
+  use_optimization: true
+  control_points_distance: 0.25
+  clearance_threshold: 0.2
+  
+search:
+  margin: 0.2
+  resolution_astar: 0.1
+  allocate_num: 200000
+  max_tau: 0.25
+  init_max_tau: 0.3
+  lambda_heu: 5.0
+  w_time: 10.0
+  
+bspline:
+  limit_vel: 0.2
+  limit_acc: 0.5

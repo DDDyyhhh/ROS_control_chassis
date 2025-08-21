@@ -1,0 +1,46 @@
+<launch>
+    <!-- ===================================================================== -->
+    <!--     Final Optimized Launch File for Orbbec Camera with YOLO           -->
+    <!-- ===================================================================== -->
+
+    <arg name="camera_name" default="camera"/>
+
+    <!-- CRITICAL: 启用深度到彩色对齐 -->
+    <arg name="depth_align" default="true"/>
+
+    <!-- CRITICAL: 使用UVC模式来驱动彩色摄像头，因为这已被证明是有效的 -->
+    <arg name="use_uvc_camera" default="true"/>
+
+    <!-- 彩色流配置 (640x480, 30fps) -->
+    <arg name="color_width" default="640"/>
+    <arg name="color_height" default="480"/>
+    <arg name="color_fps" default="30"/>
+
+    <!-- 深度流配置 -->
+    <!-- +++ 核心修正：使用硬件明确支持的深度高度 400 +++ -->
+    <arg name="depth_width" default="640"/>
+    <arg name="depth_height" default="400"/> <!-- 从480改回400 -->
+    <arg name="depth_fps" default="30"/>
+    
+    <group ns="$(arg camera_name)">
+        <node name="camera" pkg="astra_camera" type="astra_camera_node" output="screen" required="true">
+            <!-- 传递最关键的参数 -->
+            <param name="depth_align" value="$(arg depth_align)"/>
+            <param name="use_uvc_camera" value="$(arg use_uvc_camera)"/>
+            
+            <param name="enable_color" value="true"/>
+            <param name="color_width" value="$(arg color_width)"/>
+            <param name="color_height" value="$(arg color_height)"/>
+            <param name="color_fps" value="$(arg color_fps)"/>
+            
+            <param name="enable_depth" value="true"/>
+            <param name="depth_width" value="$(arg depth_width)"/>
+            <param name="depth_height" value="$(arg depth_height)"/>
+            <param name="depth_fps" value="$(arg depth_fps)"/>
+            
+            <!-- 禁用不必要的功能以节省资源 -->
+            <param name="enable_ir" value="false"/>
+            <param name="enable_point_cloud" value="false"/>
+        </node>
+    </group>
+</launch>

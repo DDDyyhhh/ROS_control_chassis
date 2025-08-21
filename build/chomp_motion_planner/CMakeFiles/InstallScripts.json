@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/chomp_motion_planner/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/chomp_motion_planner/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/chomp_motion_planner/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/chomp_motion_planner/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(ros_arduino_msgs_MSG_INCLUDE_DIRS "/home/orangepi/catkin_ws/src/ros_arduino_bridge/ros_arduino_msgs/msg")
-set(ros_arduino_msgs_MSG_DEPENDENCIES std_msgs)
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs/share/ros_arduino_msgs/cmake/ros_arduino_msgs-msg-paths.cmake

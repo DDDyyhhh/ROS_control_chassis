@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/octomap/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/octomap/src/math/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/octomap/src/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/octomap/src/testing/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

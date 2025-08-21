@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: opencv_tests
-Description: Description of opencv_tests
-Version: 1.16.2
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/opencv_tests/lib/pkgconfig/opencv_tests.pc

@@ -1,8 +1,1 @@
-(cl:in-package astra_camera-srv)
-(cl:export '(DATA-VAL
-          DATA
-          SUCCESS-VAL
-          SUCCESS
-          MESSAGE-VAL
-          MESSAGE
-))
+/home/orangepi/catkin_ws/devel/.private/astra_camera/share/common-lisp/ros/astra_camera/srv/_package_SetString.lisp

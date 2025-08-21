@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/uav_utils/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/uav_utils/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/uav_utils/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/uav_utils/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

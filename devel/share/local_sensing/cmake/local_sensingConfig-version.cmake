@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/local_sensing/share/local_sensing/cmake/local_sensingConfig-version.cmake

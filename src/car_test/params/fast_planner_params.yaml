@@ -1,0 +1,17 @@
+# ======================== 2. 感知与地图参数 ========================
+# 我们只保留 local_sensing 和 trajectory_generator 这两个我们确实需要配置的部分
+
+
+# ======================== 4. 轨迹优化参数 ========================
+trajectory_generator:
+  # 速度/加速度限制
+  max_vel_x: 0.2
+  max_vel_y: 0.2
+  max_vel_z: 0.01
+  max_acc_x: 0.5
+  max_acc_y: 0.5
+  max_acc_z: 0.01
+
+# 【【【注意】】】
+# 我已经将 manager: 和 path_searching: 这两个空的顶层键【【【完全删除】】】了！
+# 我们让 Fast-Planner 对这些参数使用它自己的内部默认值。

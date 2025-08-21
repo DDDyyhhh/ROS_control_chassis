@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5.0)
 project(turn_on_wheeltec_robot)
 
 find_package(catkin REQUIRED COMPONENTS

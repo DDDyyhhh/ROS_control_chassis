@@ -1,0 +1,9 @@
+In file included from [01m[K/usr/include/boost/config/header_deprecated.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/progress.hpp:22[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/moveit/moveit_ros/benchmarks/src/BenchmarkExecutor.cpp:50[m[K:
+[01m[K/usr/include/boost/progress.hpp:23:1:[m[K [01;36m[Knote: [m[K#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.
+   23 | [01;36m[KBOOST_HEADER_DEPRECATED[m[K( "the facilities in <boost/timer/timer.hpp>" )
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/timer.hpp:21:1:[m[K [01;36m[Knote: [m[K#pragma message: This header is deprecated. Use the facilities in <boost/timer/timer.hpp> instead.
+   21 | [01;36m[KBOOST_HEADER_DEPRECATED[m[K( "the facilities in <boost/timer/timer.hpp>" )
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K

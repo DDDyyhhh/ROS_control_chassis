@@ -1,0 +1,5 @@
+ros_arduino_bridge/ros_arduino_python
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_python/lib/python3/dist-packages/ros_arduino_python/__init__.py /home/orangepi/catkin_ws/devel/lib/python3/dist-packages/ros_arduino_python/__init__.py
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_python/lib/pkgconfig/ros_arduino_python.pc /home/orangepi/catkin_ws/devel/lib/pkgconfig/ros_arduino_python.pc
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_python/share/ros_arduino_python/cmake/ros_arduino_pythonConfig.cmake /home/orangepi/catkin_ws/devel/share/ros_arduino_python/cmake/ros_arduino_pythonConfig.cmake
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_python/share/ros_arduino_python/cmake/ros_arduino_pythonConfig-version.cmake /home/orangepi/catkin_ws/devel/share/ros_arduino_python/cmake/ros_arduino_pythonConfig-version.cmake

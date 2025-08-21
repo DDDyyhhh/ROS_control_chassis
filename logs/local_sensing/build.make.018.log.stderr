@@ -1,0 +1,36 @@
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/pcl_conversions/pcl_conversions.h:42[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/local_sensing/src/pointcloud_render_node.cpp:8[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/local_sensing/src/pointcloud_render_node.cpp:[m[K In function ‘[01m[Kvoid rcvGlobalPointCloudCallBack(const PointCloud2&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/local_sensing/src/pointcloud_render_node.cpp:89:12:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%zu[m[K’ expects argument of type ‘[01m[Ksize_t[m[K’, but argument 8 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wformat=[m[K]
+   89 |   ROS_INFO([01;35m[K"[Local Sensing] Global Pointcloud received! Point count: %zu"[m[K, [32m[Kpointcloud_map.width * pointcloud_map.height[m[K);
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                 [32m[K|[m[K
+      |                                                                                                 [32m[Kunsigned int[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/local_sensing/src/pointcloud_render_node.cpp:89:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   89 |   [01;36m[KROS_INFO[m[K("[Local Sensing] Global Pointcloud received! Point count: %zu", pointcloud_map.width * pointcloud_map.height);
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/local_sensing/src/pointcloud_render_node.cpp:89:72:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   89 |   ROS_INFO("[Local Sensing] Global Pointcloud received! Point count: [01;36m[K%zu[m[K", pointcloud_map.width * pointcloud_map.height);
+      |                                                                      [01;36m[K~~^[m[K
+      |                                                                        [01;36m[K|[m[K
+      |                                                                        [01;36m[Klong unsigned int[m[K
+      |                                                                      [32m[K%u[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/local_sensing/src/pointcloud_render_node.cpp:95:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_input[m[K’ was not declared in this scope
+   95 |   if ([01;31m[Kcloud_input[m[K.points.empty()) {
+      |       [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/local_sensing_node.dir/build.make:79：CMakeFiles/local_sensing_node.dir/src/pointcloud_render_node.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3306：CMakeFiles/local_sensing_node.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

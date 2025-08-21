@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/local_sensing_node/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/local_sensing_node/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/local_sensing_node/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/local_sensing_node/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

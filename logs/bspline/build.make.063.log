@@ -1,0 +1,7 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/bspline.dir/src/non_uniform_bspline.cpp.o[0m
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/bspline/src/non_uniform_bspline.cpp:[m[K In member function ‘[01m[Kbool fast_planner::NonUniformBspline::checkFeasibility(bool)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/bspline/src/non_uniform_bspline.cpp:186:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kratio[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  186 |   double [01;35m[Kratio[m[K = max(max_vel / limit_vel_, sqrt(fabs(max_acc) / limit_acc_));
+      |          [01;35m[K^~~~~[m[K
+[100%] [1m[32mLinking CXX shared library /home/orangepi/catkin_ws/devel/.private/bspline/lib/libbspline.so[0m
+[100%] [0mBuilt target bspline[0m

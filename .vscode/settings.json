@@ -9,6 +9,9 @@
     "files.associations": {
         "*.launch": "xml",
         "condition_variable": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "core": "cpp",
+        "numericaldiff": "cpp",
+        "specialfunctions": "cpp"
     }
 }

@@ -1,0 +1,4 @@
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/astar.cpp:[m[K In member function ‘[01m[Kint fast_planner::Astar::timeToIndex(double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/astar.cpp:329:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  329 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

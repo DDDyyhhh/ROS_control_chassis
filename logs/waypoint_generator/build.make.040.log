@@ -1,0 +1,19 @@
+/usr/local/bin/cmake -S/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/waypoint_generator -B/home/orangepi/catkin_ws/build/waypoint_generator --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/bin/cmake -E cmake_progress_start /home/orangepi/catkin_ws/build/waypoint_generator/CMakeFiles /home/orangepi/catkin_ws/build/waypoint_generator//CMakeFiles/progress.marks
+/usr/bin/make  -f CMakeFiles/Makefile2 all
+make[1]: 进入目录“/home/orangepi/catkin_ws/build/waypoint_generator”
+/usr/bin/make  -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/depend
+make[2]: 进入目录“/home/orangepi/catkin_ws/build/waypoint_generator”
+cd /home/orangepi/catkin_ws/build/waypoint_generator && /usr/local/bin/cmake -E cmake_depends "Unix Makefiles" /home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/waypoint_generator /home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/waypoint_generator /home/orangepi/catkin_ws/build/waypoint_generator /home/orangepi/catkin_ws/build/waypoint_generator /home/orangepi/catkin_ws/build/waypoint_generator/CMakeFiles/waypoint_generator.dir/DependInfo.cmake "--color="
+make[2]: 离开目录“/home/orangepi/catkin_ws/build/waypoint_generator”
+/usr/bin/make  -f CMakeFiles/waypoint_generator.dir/build.make CMakeFiles/waypoint_generator.dir/build
+make[2]: 进入目录“/home/orangepi/catkin_ws/build/waypoint_generator”
+[ 50%] [32mBuilding CXX object CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o[0m
+/usr/bin/c++ -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"waypoint_generator\" -I/home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/waypoint_generator/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -std=c++11 -Wall -O3 -march=native -MD -MT CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o -MF CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o.d -o CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o -c /home/orangepi/catkin_ws/src/Fast-Planner/uav_simulator/Utils/waypoint_generator/src/waypoint_generator.cpp
+[100%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/waypoint_generator/lib/waypoint_generator/waypoint_generator[0m
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/waypoint_generator.dir/link.txt --verbose=1
+/usr/bin/c++  -std=c++11 -Wall -O3 -march=native CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o -o /home/orangepi/catkin_ws/devel/.private/waypoint_generator/lib/waypoint_generator/waypoint_generator  -Wl,-rpath,/opt/ros/noetic/lib /opt/ros/noetic/lib/libtf.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so /usr/lib/aarch64-linux-gnu/libpthread.so /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/aarch64-linux-gnu/liblog4cxx.so /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+make[2]: 离开目录“/home/orangepi/catkin_ws/build/waypoint_generator”
+[100%] [0mBuilt target waypoint_generator[0m
+make[1]: 离开目录“/home/orangepi/catkin_ws/build/waypoint_generator”
+/usr/local/bin/cmake -E cmake_progress_start /home/orangepi/catkin_ws/build/waypoint_generator/CMakeFiles 0

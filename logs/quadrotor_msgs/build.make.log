@@ -1,0 +1,31 @@
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_LQRTrajectory[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_AuxCommand[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_Corrections[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_OutputData[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_PositionCommand[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_Gains[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_Serial[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_PPROutputData[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_SO3Command[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_StatusData[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_TRPYCommand[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_PolynomialTrajectory[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target nav_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target _quadrotor_msgs_generate_messages_check_deps_Odometry[0m
+[ 19%] [0mBuilt target quadrotor_msgs_generate_messages_py[0m
+[ 38%] [0mBuilt target quadrotor_msgs_generate_messages_cpp[0m
+[ 57%] [0mBuilt target quadrotor_msgs_generate_messages_eus[0m
+[ 76%] [0mBuilt target quadrotor_msgs_generate_messages_lisp[0m
+[ 94%] [0mBuilt target quadrotor_msgs_generate_messages_nodejs[0m
+[ 97%] [0mBuilt target decode_msgs[0m
+[100%] [0mBuilt target encode_msgs[0m
+[100%] [0mBuilt target quadrotor_msgs_generate_messages[0m

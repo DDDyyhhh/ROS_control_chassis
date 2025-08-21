@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: rosserial_msgs
-Description: Description of rosserial_msgs
-Version: 0.9.2
-Cflags: -I/home/orangepi/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime
+/home/orangepi/catkin_ws/devel/.private/rosserial_msgs/lib/pkgconfig/rosserial_msgs.pc

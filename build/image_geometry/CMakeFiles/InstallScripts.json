@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/image_geometry/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/image_geometry/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/image_geometry/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/image_geometry/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/image_geometry/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

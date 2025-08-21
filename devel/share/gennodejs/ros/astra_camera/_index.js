@@ -1,7 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-  srv: require('./srv/_index.js')
-};
+/home/orangepi/catkin_ws/devel/.private/astra_camera/share/gennodejs/ros/astra_camera/_index.js

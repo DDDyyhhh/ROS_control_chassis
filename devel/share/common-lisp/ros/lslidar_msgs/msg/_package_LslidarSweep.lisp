@@ -1,6 +1,1 @@
-(cl:in-package lslidar_msgs-msg)
-(cl:export '(HEADER-VAL
-          HEADER
-          SCANS-VAL
-          SCANS
-))
+/home/orangepi/catkin_ws/devel/.private/lslidar_msgs/share/common-lisp/ros/lslidar_msgs/msg/_package_LslidarSweep.lisp

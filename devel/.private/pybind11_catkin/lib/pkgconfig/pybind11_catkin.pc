@@ -1,0 +1,8 @@
+prefix=/home/orangepi/catkin_ws/devel/.private/pybind11_catkin
+
+Name: pybind11_catkin
+Description: Description of pybind11_catkin
+Version: 2.10.3
+Cflags: -I/home/orangepi/catkin_ws/devel/.private/pybind11_catkin/include/pybind11_catkin
+Libs: -L${prefix}/lib 
+Requires: 

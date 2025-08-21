@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/plan_manage/share/common-lisp/ros/plan_manage/msg/_package_Bspline.lisp

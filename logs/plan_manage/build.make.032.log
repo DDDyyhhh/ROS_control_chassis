@@ -1,0 +1,24 @@
+[  0%] [0mBuilt target _plan_manage_generate_messages_check_deps_Bspline[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[ 14%] [0mBuilt target plan_manage_generate_messages_py[0m
+[ 21%] [0mBuilt target plan_manage_generate_messages_cpp[0m
+[ 35%] [0mBuilt target plan_manage_generate_messages_eus[0m
+[ 42%] [0mBuilt target plan_manage_generate_messages_lisp[0m
+[ 50%] [0mBuilt target plan_manage_generate_messages_nodejs[0m
+[ 50%] [0mBuilt target plan_manage_generate_messages[0m
+[ 64%] [0mBuilt target traj_server[0m
+[ 71%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node[0m
+/usr/bin/ld: 找不到 -lplan_env
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:321：/home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3652：CMakeFiles/fast_planner_node.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

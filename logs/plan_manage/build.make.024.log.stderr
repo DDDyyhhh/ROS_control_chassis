@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o: in function `fast_planner::FastPlannerManager::checkMapStatus(ros::TimerEvent const&)':
+/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:98: undefined reference to `SDFMap::getReceivedCloudSize()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:321：/home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3648：CMakeFiles/fast_planner_node.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2

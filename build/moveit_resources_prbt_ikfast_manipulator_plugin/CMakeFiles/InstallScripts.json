@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_resources_prbt_ikfast_manipulator_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_resources_prbt_ikfast_manipulator_plugin/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_resources_prbt_ikfast_manipulator_plugin/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_resources_prbt_ikfast_manipulator_plugin/gtest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,48 @@
+[  0%] [0mBuilt target std_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target _plan_manage_generate_messages_check_deps_Bspline[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[ 14%] [0mBuilt target plan_manage_generate_messages_py[0m
+[ 21%] [0mBuilt target plan_manage_generate_messages_cpp[0m
+[ 35%] [0mBuilt target plan_manage_generate_messages_eus[0m
+[ 42%] [0mBuilt target plan_manage_generate_messages_lisp[0m
+[ 50%] [0mBuilt target plan_manage_generate_messages_nodejs[0m
+[ 50%] [0mBuilt target plan_manage_generate_messages[0m
+[ 57%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/traj_server.dir/src/traj_server.cpp.o[0m
+/usr/bin/ld: CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o: in function `fast_planner::FastPlannerManager::checkMapStatus(ros::TimerEvent const&)':
+/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:98: undefined reference to `SDFMap::getReceivedCloudSize()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:321：/home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/fast_planner_node] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3648：CMakeFiles/fast_planner_node.dir/all] 错误 2
+make[1]: *** 正在等待未完成的任务....
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:[m[K In function ‘[01m[Kvoid bsplineCallback(plan_manage::BsplineConstPtr)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:134:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  134 |   for (int i = 0; [01;35m[Ki < msg->knots.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:138:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<geometry_msgs::Point_<std::allocator<void> >, std::allocator<geometry_msgs::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  138 |   for (int i = 0; [01;35m[Ki < msg->pos_pts.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:150:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  150 |   for (int i = 0; [01;35m[Ki < msg->yaw_pts.size()[m[K; ++i) {
+      |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:[m[K In function ‘[01m[Kvoid cmdCallback(const ros::TimerEvent&)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:257:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kpos_err[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  257 |   auto [01;35m[Kpos_err[m[K = pos_f - pos;
+      |        [01;35m[K^~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:255:15:[m[K [01;35m[Kwarning: [m[K‘[01m[Kyawdot[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  255 |   [01;35m[Kcmd.yaw_dot = yawdot[m[K;
+      |   [01;35m[K~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/traj_server.cpp:211:10:[m[K [01;35m[Kwarning: [m[K‘[01m[Kyaw[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+  211 |   double [01;35m[Kyaw[m[K, yawdot;
+      |          [01;35m[K^~~[m[K
+[ 71%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/traj_server[0m
+[ 71%] [0mBuilt target traj_server[0m
+make: *** [Makefile:146：all] 错误 2

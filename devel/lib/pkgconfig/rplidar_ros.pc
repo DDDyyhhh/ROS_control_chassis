@@ -1,8 +1,1 @@
-prefix=/home/orangepi/catkin_ws/devel
-
-Name: rplidar_ros
-Description: Description of rplidar_ros
-Version: 2.1.5
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+/home/orangepi/catkin_ws/devel/.private/rplidar_ros/lib/pkgconfig/rplidar_ros.pc

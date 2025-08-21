@@ -1,0 +1,46 @@
+<launch>
+
+    <!-- ==================== 1. 启动底层与通信 ==================== -->
+    <!-- 启动与 STM32 的通信 (纯粹的执行器) -->
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
+        <param name="port" value="/dev/ttyUSB0"/>
+        <param name="baud" value="115200"/>
+        <param name="buffer_size" value="1024"/>
+    </node>
+
+
+    <!-- Gemini Pro 深度相机 -->
+    <!-- <include file="$(find astra_camera)/launch/gemini.launch"/> -->
+
+    <!-- 加载机器人 URDF 模型并启动 robot_state_publisher -->
+
+    
+    <!-- 它发布 base_link -> wheels 等关节变换 -->
+    <include file="$(find mycar_description)/launch/car.launch" />
+
+    <!-- ==================== 2. 启动传感器 ==================== -->
+    <!-- 启动宇树 L2 雷达驱动，它会发布 /unilidar/cloud 和 /unilidar/imu -->
+    <include file="$(find unitree_lidar_ros)/launch/run_without_rviz.launch"/>
+
+    <!-- ==================== 4. 启动 Point-LIO SLAM 节点 ==================== -->
+    <node pkg="point_lio_unilidar" type="pointlio_mapping_STM32" name="laserMapping_STM32" output="screen">
+		<rosparam command="load" file="$(find point_lio_unilidar)/config/unilidar_l2_STM32.yaml" />
+		
+    <param name="odom_frame" value="odom" /> <!-- 让 odomAftMapped 的 child_frame_id 变成 odom -->
+    <param name="map_frame" value="map" /> <!-- 让 odomAftMapped 的 header.frame_id 变成 map -->
+		<!-- change to 1 to use IMU as input of Point-LIO-->
+		<param name="use_imu_as_input" type="bool" value="0"/>
+		
+		<param name="prop_at_freq_of_imu" type="bool" value="1"/>
+		<param name="check_satu" type="bool" value="1"/>
+		<param name="init_map_size" type="int" value="10"/>
+		<param name="point_filter_num" type="int" value="1"/> 
+
+		<param name="space_down_sample" type="bool" value="1" />
+		<param name="filter_size_surf" type="double" value="0.1" /> 
+		<param name="filter_size_map" type="double" value="0.1" /> 
+		<param name="cube_side_length" type="double" value="1000" /> 
+		<param name="runtime_pos_log_enable" type="bool" value="0" /> 
+	</node>
+
+</launch>

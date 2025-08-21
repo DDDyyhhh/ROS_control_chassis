@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/cv_bridge/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/cv_bridge/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/cv_bridge/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/cv_bridge/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/cv_bridge/python/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/cv_bridge/src/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/cv_bridge/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

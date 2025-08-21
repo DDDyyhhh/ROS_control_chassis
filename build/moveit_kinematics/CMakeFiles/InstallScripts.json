@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/gtest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/gtest/googlemock/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/gtest/googletest/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/kdl_kinematics_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/lma_kinematics_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/srv_kinematics_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/ikfast_kinematics_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/cached_ik_kinematics_plugin/cmake_install.cmake",
+		"/home/orangepi/catkin_ws/build/moveit_kinematics/test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

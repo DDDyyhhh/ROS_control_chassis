@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/orangepi/catkin_ws/devel/lib/wpr_simulation/demo_lidar_data"
-  "/home/orangepi/catkin_ws/devel/lib/wpr_simulation/demo_lidar_data.pdb"
+  "/home/orangepi/catkin_ws/devel/.private/wpr_simulation/lib/wpr_simulation/demo_lidar_data"
+  "/home/orangepi/catkin_ws/devel/.private/wpr_simulation/lib/wpr_simulation/demo_lidar_data.pdb"
   "CMakeFiles/demo_lidar_data.dir/src/demo_lidar_data.cpp.o"
+  "CMakeFiles/demo_lidar_data.dir/src/demo_lidar_data.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

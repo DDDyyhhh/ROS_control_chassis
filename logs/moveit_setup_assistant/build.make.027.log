@@ -1,0 +1,12 @@
+[  2%] [1m[34mAutomatic MOC for target moveit_setup_assistant_tools[0m
+[  2%] [0mBuilt target moveit_setup_assistant_tools_autogen[0m
+[ 24%] [0mBuilt target moveit_setup_assistant_tools[0m
+[ 26%] [1m[34mAutomatic MOC for target moveit_setup_assistant_widgets[0m
+[ 29%] [1m[34mAutomatic MOC for target moveit_setup_assistant_updater[0m
+[ 29%] [0mBuilt target moveit_setup_assistant_updater_autogen[0m
+[ 29%] [0mBuilt target moveit_setup_assistant_widgets_autogen[0m
+[ 36%] [0mBuilt target moveit_setup_assistant_updater[0m
+[ 90%] [0mBuilt target moveit_setup_assistant_widgets[0m
+[ 92%] [1m[34mAutomatic MOC for target moveit_setup_assistant[0m
+[ 92%] [0mBuilt target moveit_setup_assistant_autogen[0m
+[100%] [0mBuilt target moveit_setup_assistant[0m

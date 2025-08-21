@@ -1,0 +1,4 @@
+Unlinking: /home/orangepi/catkin_ws/devel/lib/libpath_searching.so
+Unlinking: /home/orangepi/catkin_ws/devel/lib/pkgconfig/path_searching.pc
+Unlinking: /home/orangepi/catkin_ws/devel/share/path_searching/cmake/path_searchingConfig.cmake
+Unlinking: /home/orangepi/catkin_ws/devel/share/path_searching/cmake/path_searchingConfig-version.cmake

@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/bspline/share/bspline/cmake/bsplineConfig.cmake

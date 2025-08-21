@@ -1,0 +1,42 @@
+In file included from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qopengl.h:146[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtOpenGL/qgl.h:45[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtOpenGL/QGLWidget:1[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/config.h:77[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/vec.h:32[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/quaternion.h:26[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/keyFrameInterpolator.h:29[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/camera.h:26[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/qglviewer.h:26[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/OcTreeDrawer.cpp:26[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglext.h:60:[m[K [01;35m[Kwarning: [m[K"GL_GLEXT_VERSION" redefined
+   60 | #define GL_GLEXT_VERSION 20170325
+      | 
+In file included from [01m[K/usr/include/GL/gl.h:2050[m[K,
+                 from [01m[K/usr/include/GL/glu.h:38[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/include/octovis/SceneObject.h:37[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/include/octovis/OcTreeDrawer.h:28[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/OcTreeDrawer.cpp:25[m[K:
+[01m[K/usr/include/GL/glext.h:54:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   54 | #define GL_GLEXT_VERSION 20190805
+      | 
+In file included from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qopengl.h:146[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtOpenGL/qgl.h:45[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/qt5/QtOpenGL/QGLWidget:1[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/config.h:77[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/vec.h:32[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/quaternion.h:26[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/keyFrameInterpolator.h:29[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/camera.h:26[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/extern/QGLViewer/qglviewer.h:26[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/OcTreeDrawer.cpp:26[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/qt5/QtGui/qopenglext.h:60:[m[K [01;35m[Kwarning: [m[K"GL_GLEXT_VERSION" redefined
+   60 | #define GL_GLEXT_VERSION 20170325
+      | 
+In file included from [01m[K/usr/include/GL/gl.h:2050[m[K,
+                 from [01m[K/usr/include/GL/glu.h:38[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/include/octovis/SceneObject.h:37[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/include/octovis/OcTreeDrawer.h:28[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/octomap/octovis/src/OcTreeDrawer.cpp:25[m[K:
+[01m[K/usr/include/GL/glext.h:54:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   54 | #define GL_GLEXT_VERSION 20190805
+      | 

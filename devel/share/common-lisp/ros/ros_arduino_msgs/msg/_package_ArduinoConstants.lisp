@@ -1,2 +1,1 @@
-(cl:in-package ros_arduino_msgs-msg)
-(cl:export '())
+/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs/share/common-lisp/ros/ros_arduino_msgs/msg/_package_ArduinoConstants.lisp

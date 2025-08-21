@@ -1,0 +1,8 @@
+prefix=/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs
+
+Name: ros_arduino_msgs
+Description: Description of ros_arduino_msgs
+Version: 0.2.0
+Cflags: -I/home/orangepi/catkin_ws/devel/.private/ros_arduino_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

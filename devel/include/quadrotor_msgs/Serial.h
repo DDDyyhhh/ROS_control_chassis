@@ -1,0 +1,1 @@
+/home/orangepi/catkin_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Serial.h

@@ -1,0 +1,118 @@
+[  0%] [0mBuilt target std_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_py[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_cpp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_eus[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_lisp[0m
+[  0%] [0mBuilt target std_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target geometry_msgs_generate_messages_nodejs[0m
+[  0%] [0mBuilt target _plan_manage_generate_messages_check_deps_Bspline[0m
+[  8%] [0mBuilt target plan_manage_generate_messages_py[0m
+[ 12%] [0mBuilt target plan_manage_generate_messages_cpp[0m
+[ 20%] [0mBuilt target plan_manage_generate_messages_eus[0m
+[ 24%] [0mBuilt target plan_manage_generate_messages_nodejs[0m
+[ 28%] [0mBuilt target plan_manage_generate_messages_lisp[0m
+[ 28%] [0mBuilt target plan_manage_generate_messages[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/traj_server.dir/src/traj_server.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/fast_planner_node.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/kino_replan_fsm.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/topo_replan_fsm.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/src/planner_manager.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/sdf_map.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/obj_predictor.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/edt_environment.cpp.o[0m
+[ 64%] [1m[32mLinking CXX executable /home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/traj_server[0m
+/usr/bin/ld: CMakeFiles/traj_server.dir/src/traj_server.cpp.o: in function `bsplineCallback(boost::shared_ptr<plan_manage::Bspline_<std::allocator<void> > const>)':
+traj_server.cpp:(.text+0x668): undefined reference to `fast_planner::NonUniformBspline::NonUniformBspline(Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, int const&, double const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0x674): undefined reference to `fast_planner::NonUniformBspline::setKnot(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0x734): undefined reference to `fast_planner::NonUniformBspline::NonUniformBspline(Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, int const&, double const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0x7b0): undefined reference to `fast_planner::NonUniformBspline::getDerivative()'
+/usr/bin/ld: traj_server.cpp:(.text+0x7cc): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x7f0): undefined reference to `fast_planner::NonUniformBspline::getDerivative()'
+/usr/bin/ld: traj_server.cpp:(.text+0x80c): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x830): undefined reference to `fast_planner::NonUniformBspline::getDerivative()'
+/usr/bin/ld: traj_server.cpp:(.text+0x84c): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x860): undefined reference to `fast_planner::NonUniformBspline::getTimeSum()'
+/usr/bin/ld: traj_server.cpp:(.text+0x884): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x894): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x8d4): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x8e4): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: traj_server.cpp:(.text+0x8f4): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: CMakeFiles/traj_server.dir/src/traj_server.cpp.o:traj_server.cpp:(.text+0x904): more undefined references to `fast_planner::NonUniformBspline::~NonUniformBspline()' follow
+/usr/bin/ld: CMakeFiles/traj_server.dir/src/traj_server.cpp.o: in function `cmdCallback(ros::TimerEvent const&)':
+traj_server.cpp:(.text+0xd68): undefined reference to `fast_planner::NonUniformBspline::evaluateDeBoorT(double const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0xda8): undefined reference to `fast_planner::NonUniformBspline::evaluateDeBoorT(double const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0xde8): undefined reference to `fast_planner::NonUniformBspline::evaluateDeBoorT(double const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0xe28): undefined reference to `fast_planner::NonUniformBspline::evaluateDeBoorT(double const&)'
+/usr/bin/ld: traj_server.cpp:(.text+0xe70): undefined reference to `fast_planner::NonUniformBspline::evaluateDeBoorT(double const&)'
+/usr/bin/ld: CMakeFiles/traj_server.dir/src/traj_server.cpp.o:traj_server.cpp:(.text+0xee4): more undefined references to `fast_planner::NonUniformBspline::evaluateDeBoorT(double const&)' follow
+/usr/bin/ld: CMakeFiles/traj_server.dir/src/traj_server.cpp.o: in function `void __gnu_cxx::new_allocator<fast_planner::NonUniformBspline>::destroy<fast_planner::NonUniformBspline>(fast_planner::NonUniformBspline*)':
+traj_server.cpp:(.text._ZN9__gnu_cxx13new_allocatorIN12fast_planner17NonUniformBsplineEE7destroyIS2_EEvPT_[_ZN9__gnu_cxx13new_allocatorIN12fast_planner17NonUniformBsplineEE7destroyIS2_EEvPT_]+0x14): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+/usr/bin/ld: CMakeFiles/traj_server.dir/src/traj_server.cpp.o: in function `void std::_Destroy<fast_planner::NonUniformBspline>(fast_planner::NonUniformBspline*)':
+traj_server.cpp:(.text._ZSt8_DestroyIN12fast_planner17NonUniformBsplineEEvPT_[_ZSt8_DestroyIN12fast_planner17NonUniformBsplineEEvPT_]+0x10): undefined reference to `fast_planner::NonUniformBspline::~NonUniformBspline()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/traj_server.dir/build.make:267：/home/orangepi/catkin_ws/devel/.private/plan_manage/lib/plan_manage/traj_server] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:3527：CMakeFiles/traj_server.dir/all] 错误 2
+make[1]: *** 正在等待未完成的任务....
+[ 68%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_env/src/raycast.cpp.o[0m
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/plan_container.hpp:34[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/planner_manager.h:38[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/kino_replan_fsm.h:44[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/fast_planner_node.cpp:29[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/plan_container.hpp:34[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/planner_manager.h:38[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/planner_manager.cpp:27[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[ 72%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/astar.cpp.o[0m
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/plan_container.hpp:34[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/planner_manager.h:38[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/kino_replan_fsm.h:44[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/kino_replan_fsm.cpp:27[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/plan_container.hpp:34[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/planner_manager.h:38[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/include/plan_manage/topo_replan_fsm.h:44[m[K,
+                 from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:27[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:[m[K In member function ‘[01m[Kbool fast_planner::TopoReplanFSM::callSearchAndOptimization()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/src/topo_replan_fsm.cpp:372:50:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  372 | bool TopoReplanFSM::callSearchAndOptimization() {[01;35m[K}[m[K
+      |                                                  [01;35m[K^[m[K
+[ 76%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/kinodynamic_astar.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/topo_prm.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/bspline/src/non_uniform_bspline.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/bspline_opt/src/bspline_optimizer.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp.o[0m
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/astar.cpp:[m[K In member function ‘[01m[Kint fast_planner::Astar::timeToIndex(double)[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/path_searching/src/astar.cpp:329:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  329 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 96%] [32mBuilding CXX object CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp.o[0m
+In file included from [01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/polynomial_traj.cpp:27[m[K:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:[m[K In member function ‘[01m[Kdouble PolynomialTraj::getMeanVel()[m[K’:
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/plan_manage/../poly_traj/include/poly_traj/polynomial_traj.h:178:3:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  178 |   [01;35m[K}[m[K
+      |   [01;35m[K^[m[K
+[01m[K/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp:32:10:[m[K [01;31m[Kfatal error: [m[Kswarmtal_msgs/drone_onboard_command.h: 没有那个文件或目录
+   32 | #include [01;31m[K<swarmtal_msgs/drone_onboard_command.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/fast_planner_node.dir/build.make:275：CMakeFiles/fast_planner_node.dir/home/orangepi/catkin_ws/src/Fast-Planner/fast_planner/poly_traj/src/traj_generator.cpp.o] 错误 1
+make[2]: *** 正在等待未完成的任务....
+make[1]: *** [CMakeFiles/Makefile2:3487：CMakeFiles/fast_planner_node.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2
